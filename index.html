@@ -93,7 +93,7 @@
       width: 50px;
       height: 50px;
       background-color: var(--icon-bg-light);
-      color: var(--primary-dark);
+      color: #c5a059;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -258,7 +258,7 @@
 
     /* Green Service Card Styling */
     .service-card {
-      background-color: var(--service-green);
+      background-color: #FB8500;
       color: #ffffff;
       padding: 10px;
     }
@@ -281,7 +281,7 @@
       width: 50px;
       height: 50px;
       background-color: var(--icon-bg-light);
-      color: var(--primary-dark);
+      color: #c5a059;
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -319,7 +319,7 @@
     }
 
     .detail-icon-wrap {
-      color: var(--accent-teal);
+      color: #FB8500;
       font-size: 1.1rem;
       margin-right: 12px;
     }
@@ -359,7 +359,7 @@
 
     .btn-white {
       background-color: #ffffff;
-      color: var(--service-green);
+      color: #FB8500;
       border: none;
       font-weight: 700;
       padding: 14px;
@@ -415,7 +415,7 @@
 
     .header-icon {
       font-size: 2.5rem;
-      color: var(--navy);
+      color: #FB8500;
       margin-bottom: 15px;
     }
 
@@ -435,11 +435,27 @@
       align-items: center;
       color: #666;
       font-size: 0.9rem;
+      transition: all 0.3s ease-in-out;
     }
 
     .partner-card i {
       margin-bottom: 8px;
       opacity: 0.5;
+      font-size: 22px;
+      color: #FB8500;
+    }
+
+    .partner-card:hover {
+      background: #FB8500;
+    }
+
+    .partner-card:hover i {
+      color: #fff;
+      opacity: 1;
+    }
+
+    .partner-card:hover span {
+      color: #fff;
     }
 
     /* --- Statistics Bar (The Bottom Section) --- */
@@ -922,7 +938,7 @@
 
         <div class="col-lg-4  col-md-6" data-aos="fade-right" data-aos-duration="900">
           <div class="vl-blog-1-item">
-            
+
             <div class="vl-blog-1-thumb image-anime" style="position: relative;">
               <a href="#" class="vidoe-icon">
                 <i class="fa-solid fa-play"></i>
@@ -963,7 +979,7 @@
 
         <div class="col-lg-4  col-md-6" data-aos="fade-right" data-aos-duration="900">
           <div class="vl-blog-1-item">
-            
+
             <div class="vl-blog-1-thumb image-anime" style="position: relative;">
               <a href="#" class="vidoe-icon">
                 <i class="fa-solid fa-play"></i>
@@ -1005,7 +1021,7 @@
 
         <div class="col-lg-4  col-md-6" data-aos="fade-right" data-aos-duration="900">
           <div class="vl-blog-1-item">
-            
+
             <div class="vl-blog-1-thumb image-anime" style="position: relative;">
               <a href="#" class="vidoe-icon">
                 <i class="fa-solid fa-play"></i>
@@ -1046,7 +1062,7 @@
 
         <div class="col-lg-4  col-md-6" data-aos="fade-right" data-aos-duration="900">
           <div class="vl-blog-1-item">
-            
+
             <div class="vl-blog-1-thumb image-anime" style="position: relative;">
               <a href="#" class="vidoe-icon">
                 <i class="fa-solid fa-play"></i>
@@ -1719,52 +1735,53 @@
       <div class="countries-section">
         <div class="countries-grid">
           <div class="country-card" data-aos="fade-up" data-aos-duration="700">
-            <img src="path-to-saudi-flag.png" alt="Saudi Arabia Flag" class="flag-icon">
-            <h3>Saudi Arabia</h3>
-            <p class="worker-count"><span>1500+</span> Workers</p>
-          </div>
+  <img src="https://flagcdn.com/w80/sa.png" alt="Saudi Arabia Flag" class="flag-icon">
+  <h3>Saudi Arabia</h3>
+  <p class="worker-count"><span>1500+</span> Workers</p>
+</div>
 
-          <div class="country-card" data-aos="fade-up" data-aos-duration="800">
-            <img src="path-to-uae-flag.png" alt="UAE Flag" class="flag-icon">
-            <h3>UAE</h3>
-            <p class="worker-count"><span>1200+</span> Workers</p>
-          </div>
+<div class="country-card" data-aos="fade-up" data-aos-duration="800">
+  <img src="https://flagcdn.com/w80/ae.png" alt="UAE Flag" class="flag-icon">
+  <h3>UAE</h3>
+  <p class="worker-count"><span>1200+</span> Workers</p>
+</div>
 
-          <div class="country-card" data-aos="fade-up" data-aos-duration="900">
-            <img src="path-to-qatar-flag.png" alt="Qatar Flag" class="flag-icon">
-            <h3>Qatar</h3>
-            <p class="worker-count"><span>800+</span> Workers</p>
-          </div>
+<div class="country-card" data-aos="fade-up" data-aos-duration="900">
+  <img src="https://flagcdn.com/w80/qa.png" alt="Qatar Flag" class="flag-icon">
+  <h3>Qatar</h3>
+  <p class="worker-count"><span>800+</span> Workers</p>
+</div>
 
-          <div class="country-card" data-aos="fade-up" data-aos-duration="1000">
-            <img src="path-to-malaysia-flag.png" alt="Malaysia Flag" class="flag-icon">
-            <h3>Malaysia</h3>
-            <p class="worker-count"><span>600+</span> Workers</p>
-          </div>
+<div class="country-card" data-aos="fade-up" data-aos-duration="1000">
+  <img src="https://flagcdn.com/w80/my.png" alt="Malaysia Flag" class="flag-icon">
+  <h3>Malaysia</h3>
+  <p class="worker-count"><span>600+</span> Workers</p>
+</div>
 
-          <div class="country-card" data-aos="fade-up" data-aos-duration="1100">
-            <img src="path-to-singapore-flag.png" alt="Singapore Flag" class="flag-icon">
-            <h3>Singapore</h3>
-            <p class="worker-count"><span>400+</span> Workers</p>
-          </div>
+<div class="country-card" data-aos="fade-up" data-aos-duration="1100">
+  <img src="https://flagcdn.com/w80/sg.png" alt="Singapore Flag" class="flag-icon">
+  <h3>Singapore</h3>
+  <p class="worker-count"><span>400+</span> Workers</p>
+</div>
 
-          <div class="country-card" data-aos="fade-up" data-aos-duration="1200">
-            <img src="path-to-oman-flag.png" alt="Oman Flag" class="flag-icon">
-            <h3>Oman</h3>
-            <p class="worker-count"><span>350+</span> Workers</p>
-          </div>
+<div class="country-card" data-aos="fade-up" data-aos-duration="1200">
+  <img src="https://flagcdn.com/w80/om.png" alt="Oman Flag" class="flag-icon">
+  <h3>Oman</h3>
+  <p class="worker-count"><span>350+</span> Workers</p>
+</div>
 
-          <div class="country-card" data-aos="fade-up" data-aos-duration="1300">
-            <img src="path-to-kuwait-flag.png" alt="Kuwait Flag" class="flag-icon">
-            <h3>Kuwait</h3>
-            <p class="worker-count"><span>300+</span> Workers</p>
-          </div>
+<div class="country-card" data-aos="fade-up" data-aos-duration="1300">
+  <img src="https://flagcdn.com/w80/kw.png" alt="Kuwait Flag" class="flag-icon">
+  <h3>Kuwait</h3>
+  <p class="worker-count"><span>300+</span> Workers</p>
+</div>
 
-          <div class="country-card" data-aos="fade-up" data-aos-duration="1400">
-            <img src="path-to-bahrain-flag.png" alt="Bahrain Flag" class="flag-icon">
-            <h3>Bahrain</h3>
-            <p class="worker-count"><span>200+</span> Workers</p>
-          </div>
+<div class="country-card" data-aos="fade-up" data-aos-duration="1400">
+  <img src="https://flagcdn.com/w80/bh.png" alt="Bahrain Flag" class="flag-icon">
+  <h3>Bahrain</h3>
+  <p class="worker-count"><span>200+</span> Workers</p>
+</div>
+
         </div>
       </div>
 
@@ -1784,44 +1801,43 @@
 
 
     <div class="partners-grid">
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="500">
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="500">
         <i class="fa-solid fa-globe"></i><span>Saudi Binladin Group</span>
-      </div>
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="600">
+      </a>
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="600">
         <i class="fa-solid fa-globe"></i><span>Emaar Properties</span>
-      </div>
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="700">
+      </a>
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="700">
         <i class="fa-solid fa-globe"></i><span>Qatar Petroleum</span>
-      </div>
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="800">
+      </a>
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="800">
         <i class="fa-solid fa-globe"></i><span>Petronas Malaysia</span>
-      </div>
-
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="500">
+      </a>
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="500">
         <i class="fa-solid fa-globe"></i><span>Sembcorp Singapore</span>
-      </div>
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="600">
+      </a>
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="600">
         <i class="fa-solid fa-globe"></i><span>Oman Construction Co.</span>
-      </div>
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="700">
+      </a>
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="700">
         <i class="fa-solid fa-globe"></i><span>Al-Futtaim Group</span>
-      </div>
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="800">
+      </a>
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="800">
         <i class="fa-solid fa-globe"></i><span>Majid Al Futtaim</span>
-      </div>
+      </a>
 
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="500">
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="500">
         <i class="fa-solid fa-globe"></i><span>Lulu Group International</span>
-      </div>
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="600">
+      </a>
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="600">
         <i class="fa-solid fa-globe"></i><span>National Hospital</span>
-      </div>
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="700">
+      </a>
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="700">
         <i class="fa-solid fa-globe"></i><span>Raffles Medical Group</span>
-      </div>
-      <div class="partner-card" data-aos="fade-up" data-aos-duration="800">
+      </a>
+      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="800">
         <i class="fa-solid fa-globe"></i><span>KPJ Healthcare</span>
-      </div>
+      </a>
     </div>
 
 
