@@ -19,6 +19,127 @@
   <link rel="stylesheet" href="assets/css/plugins/slick-slider.css">
   <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
   <link rel="stylesheet" href="assets/css/main.css">
+
+  <style>
+    :root {
+      /* Color palette extracted from the original design */
+      --primary-dark: #1A2B4A;
+      /* Dark blue for titles and buttons */
+      --secondary-text: #6c757d;
+      /* Muted gray for labels */
+      --accent-teal: #54B4A5;
+      /* Teal color for small icons */
+      --icon-bg-light: #F0F2F5;
+      /* Light background for top icons */
+    }
+
+    body {
+      background-color: #f8f9fa;
+      /* Light gray page background */
+      padding-top: 40px;
+      font-family: 'Segoe UI', Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* Card Styling */
+    .job-card {
+      background-color: #fff;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      height: 100%;
+      /* Ensures all cards in a row are same height */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .job-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    /* Header Icon (Helmet, Heart, Shirt) */
+    .header-icon-wrap {
+      width: 50px;
+      height: 50px;
+      background-color: var(--icon-bg-light);
+      color: var(--primary-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Card Title */
+    .card-title {
+      color: var(--primary-dark);
+      font-weight: 700;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+
+    /* Details Section (Location, Salary, Docs) */
+    .detail-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Small teal icons */
+    .detail-icon-wrap {
+      color: var(--accent-teal);
+      font-size: 1.1rem;
+      margin-right: 12px;
+      margin-top: 2px;
+      /* Slight adjustment for alignment with text */
+    }
+
+    .detail-text-wrap {
+      flex: 1;
+    }
+
+    .detail-label {
+      color: var(--secondary-text);
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 2px;
+      display: block;
+    }
+
+    .detail-value {
+      color: #212529;
+      font-weight: 600;
+      margin-bottom: 0;
+      font-size: 0.95rem;
+    }
+
+    /* Button Styling to match reference */
+    .btn-custom-outline {
+      color: var(--primary-dark);
+      border-color: var(--primary-dark);
+      font-weight: 600;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: auto;
+      /* Pushes button to bottom if content is short */
+      width: 100%;
+    }
+
+    .btn-custom-outline:hover {
+      background-color: var(--primary-dark);
+      color: #fff;
+    }
+  </style>
 </head>
 
 <body>
@@ -339,7 +460,7 @@
               <div class="space24"></div>
               <div class="btn-area1 text-left" data-aos="fade-left" data-aos-duration="1200">
                 <a href="#" class="vl-btn1">Apply Now - Free Consultation </a>
-              <div class="space6"></div>
+                <div class="space6"></div>
                 <a href="#" class="vl-btn1 btn2">Employer Portal </a>
               </div>
             </div>
@@ -800,8 +921,9 @@
                   <h2 data-aos="zoom-in" data-aos-duration="800">These could be your success stories too!</h2>
                   <div class="space16"></div>
                   <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
-                        <a href="contact.html" class="vl-btn7"><span class="text">Apply Now - Free Consultation</span><span class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
-                    </div>
+                    <a href="contact.html" class="vl-btn7"><span class="text">Apply Now - Free Consultation</span><span
+                        class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -820,9 +942,10 @@
       <div class="row">
         <div class="col-lg-7 m-auto">
           <div class="heading1 text-center space-margin60">
-            
-            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">Your Trusted Partner for International Employment</h2>
-            
+
+            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">Your Trusted Partner for
+              International Employment</h2>
+
           </div>
         </div>
       </div>
@@ -840,7 +963,8 @@
                     </span>
                     <span class="text">
                       <span class="title">Zero Cost Migration</span>
-                      <span class="pera">Employer-funded model. Salary starts day one. Money-back guarantee within 6 months.</span>
+                      <span class="pera">Employer-funded model. Salary starts day one. Money-back guarantee within 6
+                        months.</span>
                     </span>
                   </span>
                 </button>
@@ -854,7 +978,8 @@
                     </span>
                     <span class="text">
                       <span class="title">Skill Development</span>
-                      <span class="pera">3-week training: workplace safety, language, cultural orientation, mock interviews. 100% placement success rate.</span>
+                      <span class="pera">3-week training: workplace safety, language, cultural orientation, mock
+                        interviews. 100% placement success rate.</span>
                     </span>
                   </span>
                 </button>
@@ -866,7 +991,8 @@
                     <span class="icons"><img src="assets/img/icons/bene-icons2.svg" alt=""></span>
                     <span class="text">
                       <span class="title">Government Approved</span>
-                      <span class="pera">Licensed by Bangladesh Ministry. RBA standards, zero forced labor, transparent fees.</span>
+                      <span class="pera">Licensed by Bangladesh Ministry. RBA standards, zero forced labor, transparent
+                        fees.</span>
                     </span>
                   </span>
                 </button>
@@ -878,7 +1004,8 @@
                     <span class="icons"><img src="assets/img/icons/bene-icons1.svg" alt=""></span>
                     <span class="text">
                       <span class="title">24/7 Global Support</span>
-                      <span class="pera">Country coordinator (Bangla-speaking). Emergency support in Malaysia, Saudi, UAE, Singapore, Oman, Qatar.</span>
+                      <span class="pera">Country coordinator (Bangla-speaking). Emergency support in Malaysia, Saudi,
+                        UAE, Singapore, Oman, Qatar.</span>
                     </span>
                   </span>
                 </button>
@@ -930,88 +1057,295 @@
       <div class="row">
         <div class="col-lg-7 m-auto">
           <div class="heading1 text-center space-margin60">
-            
-            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">Your Trusted Partner for International Employment
-</h2>
+            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">Our International Recruitment
+              Services</h2>
             <div class="space16"></div>
           </div>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-lg-6">
-          <div class="works-main-widget-area" data-aos="zoom-in-up" data-aos-duration="900">
-            <div class="text-end">
-              <div class="icons">
-                <img src="assets/img/icons/w-icons8.svg" alt="">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="job-card">
+            <div class="card-body">
+              <div class="header-icon-wrap">
+                <i class="fa-solid fa-helmet-safety"></i>
               </div>
-            </div>
-            <div class="space70 d-lg-block d-none"></div>
-            <div class="space30 d-lg-none d-block"></div>
-            <div class="works8-boxarea">
-              <a href="projects-single.html">Tailored Strategy</a>
-              <div class="space16"></div>
-              <p>Our team creates a personalized approach to match the right talent with the right opportunity.</p>
-              <h5>02</h5>
-            </div>
-          </div>
-          <div class="works-main-widget-area" data-aos="zoom-in-up" data-aos-duration="1000">
-            <div class="space70 d-lg-block d-none"></div>
-            <div class="space30 d-lg-none d-block"></div>
-            <div class="text-end">
-              <div class="icons">
-                <img src="assets/img/icons/w-icons10.svg" alt="">
+
+              <h2 class="card-title">Construction & Infrastructure</h2>
+
+              <div class="details-list">
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Target Countries</span>
+                    <p class="detail-value">UAE, Saudi Arabia, Qatar</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Salary Range</span>
+                    <p class="detail-value">$400-800/month</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Required Documents</span>
+                    <p class="detail-value">Passport, Medical, Police Clearance</p>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="space70 d-lg-block d-none"></div>
-            <div class="space30 d-lg-none d-block"></div>
-            <div class="works8-boxarea">
-              <a href="projects-single.html">Ongoing Support</a>
-              <div class="space16"></div>
-              <p>Our partnership doesn’t end at placement—we’re here to provide continuous support for long-term
-                success.</p>
-              <h5>04</h5>
+
+              <a href="#" class="btn btn-custom-outline">Learn More</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="space30 d-lg-none d-block"></div>
-          <div class="works-main-widget-area2">
-            <div class="works8-boxarea" data-aos="zoom-in-up" data-aos-duration="1100">
-              <a href="projects-single.html">Tailored Strategy</a>
-              <div class="space16"></div>
-              <p>Our team creates a personalized approach to match the right talent with the right opportunity.</p>
-              <h5>01</h5>
-            </div>
-            <div class="space70 d-lg-block d-none"></div>
-            <div class="space30 d-lg-none d-block"></div>
-            <div class="text-start">
-              <div class="icons">
-                <img src="assets/img/icons/w-icons8.svg" alt="">
-              </div>
-            </div>
-            <div class="space70 d-lg-block d-none"></div>
-            <div class="space30 d-lg-none d-block"></div>
-          </div>
 
-          <div class="works-main-widget-area2" data-aos="zoom-in-up" data-aos-duration="1200">
-            <div class="works8-boxarea">
-              <a href="projects-single.html">Ongoing Support</a>
-              <div class="space16"></div>
-              <p>Our partnership doesn’t end at placement—we’re here to provide continuous support for long-term
-                success.</p>
-              <h5>03</h5>
-            </div>
-            <div class="space70 d-lg-block d-none"></div>
-            <div class="space30 d-lg-none d-block"></div>
-            <div class="text-start">
-              <div class="icons">
-                <img src="assets/img/icons/w-icons10.svg" alt="">
+        <div class="col-lg-4 col-md-6">
+          <div class="job-card">
+            <div class="card-body">
+              <div class="header-icon-wrap">
+                <i class="fa-regular fa-heart"></i>
               </div>
+
+              <h2 class="card-title">Healthcare Support Staff</h2>
+
+              <div class="details-list">
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Target Countries</span>
+                    <p class="detail-value">Malaysia, Singapore, UK</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Salary Range</span>
+                    <p class="detail-value">$600-1200/month</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Required Documents</span>
+                    <p class="detail-value">Passport, Medical, Police Clearance</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-custom-outline">Learn More</a>
             </div>
           </div>
         </div>
+
+
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="job-card">
+            <div class="card-body">
+              <div class="header-icon-wrap">
+                <i class="fa-solid fa-shirt"></i>
+              </div>
+
+              <h2 class="card-title">Garment & Textile Experts</h2>
+
+              <div class="details-list">
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Target Countries</span>
+                    <p class="detail-value">Turkey, Jordan, Vietnam</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Salary Range</span>
+                    <p class="detail-value">$350-700/month</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Required Documents</span>
+                    <p class="detail-value">Passport, Medical, Police Clearance</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-custom-outline">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="job-card">
+            <div class="card-body">
+              <div class="header-icon-wrap">
+                <i class="fa-solid fa-shirt"></i>
+              </div>
+
+              <h2 class="card-title">Agriculture & Poultry</h2>
+
+              <div class="details-list">
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Target Countries</span>
+                    <p class="detail-value">Australia, Canada, Oman</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Salary Range</span>
+                    <p class="detail-value">$500-900/month</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Required Documents</span>
+                    <p class="detail-value">Passport, Medical, Police Clearance</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-custom-outline">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="job-card">
+            <div class="card-body">
+              <div class="header-icon-wrap">
+                <i class="fa-solid fa-shirt"></i>
+              </div>
+
+              <h2 class="card-title">Food Service & Hospitality</h2>
+
+              <div class="details-list">
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Target Countries</span>
+                    <p class="detail-value">UAE, Maldives, Thailand</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Salary Range</span>
+                    <p class="detail-value">$450-850/month</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Required Documents</span>
+                    <p class="detail-value">Passport, Medical, Police Clearance</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-custom-outline">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mx-auto">
+          <div class="job-card">
+            <div class="card-body">
+              <div class="header-icon-wrap">
+                <i class="fa-solid fa-shirt"></i>
+              </div>
+
+              <h2 class="card-title">Skilled Technicians</h2>
+
+              <div class="details-list">
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Target Countries</span>
+                    <p class="detail-value">Saudi Arabia, Kuwait, Japan</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Salary Range</span>
+                    <p class="detail-value">$600-1500/month</p>
+                  </div>
+                </div>
+
+                <div class="detail-item">
+                  <div class="detail-icon-wrap">
+                    <i class="fa-solid fa-file-lines"></i>
+                  </div>
+                  <div class="detail-text-wrap">
+                    <span class="detail-label">Required Documents</span>
+                    <p class="detail-value">Passport, Medical, Police Clearance</p>
+                  </div>
+                </div>
+              </div>
+
+              <a href="#" class="btn btn-custom-outline">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+
+
       </div>
     </div>
   </div>
