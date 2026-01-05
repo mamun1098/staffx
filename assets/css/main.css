@@ -9582,7 +9582,7 @@ img {
 .main-section-area .hero1 .hero-header-area h1 {
   color: var(--ztc-text-text-2);
   font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s60);
+  font-size: var(--ztc-font-size-font-s48);
   font-style: normal;
   font-weight: var(--ztc-weight-black);
   line-height: 68px;
@@ -23749,3 +23749,202 @@ img {
 }
 
 /*============= CHOOSE CSS AREA STARTS ===============*//*# sourceMappingURL=main.css.map */
+
+
+/* General Setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    padding: 40px 20px;
+    margin: 0;
+}
+
+.main-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    color: #26416d;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+/* Certifications Section */
+.certifications-wrapper {
+    border: 1px solid #e0c58a; /* Gold border */
+    border-radius: 15px;
+    padding: 40px 20px;
+    margin-bottom: 40px;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.cert-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.cert-card i {
+    font-size: 2rem;
+    color: #26416d;
+    margin-bottom: 15px;
+}
+
+.cert-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1rem;
+}
+
+.cert-card p {
+    margin: 0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+/* Mission & Vision Section */
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.mv-box {
+    padding: 40px;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+}
+
+.mission { background-color: #26416d; }
+.vision { background-color: #2d5a3e; }
+
+.mv-icon {
+    background-color: #e0c58a;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.mv-box h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.mv-box p {
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+/* Core Values Section */
+.values-flex {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.value-pill {
+    background-color: #f5e6c8;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.value-pill i {
+    color: #e0c58a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.countries-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.countries-grid {
+    display: grid;
+    /* Creates 4 equal columns on large screens */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 25px;
+}
+
+.country-card {
+    background: #ffffff;
+    border-radius: 12px;
+    border-top: 4px solid #e0c58a; /* Signature Gold Border */
+    padding: 30px 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for better UX */
+.country-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.flag-icon {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+    /* Add a slight drop shadow to flags for depth */
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.country-card h3 {
+    color: #26416d; /* Dark Blue */
+    margin: 10px 0 5px 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.worker-count {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.worker-count span {
+    color: #2d5a3e; /* Dark Green */
+    font-weight: 700;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+    .countries-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .countries-grid {
+        grid-template-columns: 1fr; /* 1 column for mobile */
+    }
+}

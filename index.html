@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from html.vikinglab.agency/staffx/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Jan 2026 13:36:25 GMT -->
+<!-- Mirrored from html.vikinglab.agency/Navira Ltd/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Jan 2026 13:36:25 GMT -->
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Staffx - Staffing And Agency HTML Templete </title>
+  <title>Navira Ltd </title>
 
   <!--=====FAB ICON=======-->
   <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
@@ -31,6 +31,12 @@
       /* Teal color for small icons */
       --icon-bg-light: #F0F2F5;
       /* Light background for top icons */
+      /* New Service Card Colors */
+      --service-green: #2D5A43;
+      --navy: #1d3354;
+      --forest: #2d5a3e;
+      --gold: #c5a059;
+      --light-gray: #f8f9fa;
     }
 
     body {
@@ -51,6 +57,7 @@
       /* Ensures all cards in a row are same height */
       display: flex;
       flex-direction: column;
+      margin-bottom: 30px;
     }
 
     .job-card:hover {
@@ -139,6 +146,335 @@
       background-color: var(--primary-dark);
       color: #fff;
     }
+
+
+    /* Card Container Styling */
+    .profile-card {
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      height: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .profile-card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Top Image Section with Overlay */
+    .card-image-wrapper {
+      position: relative;
+      height: 350px;
+      background-color: #2c3e50;
+      /* Fallback color */
+    }
+
+    .card-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Applying a slight dark/greenish tint like the original */
+      filter: brightness(0.8) contrast(1.1);
+    }
+
+    /* Dark Gradient Overlay for text readability */
+    .image-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
+      color: white;
+    }
+
+    .overlay-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .overlay-title {
+      color: #d4af37;
+      /* Gold color */
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 2px;
+    }
+
+    .overlay-exp {
+      font-size: 0.85rem;
+      opacity: 0.9;
+    }
+
+    /* Bottom Content Section */
+    .card-content {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      height: calc(100% - 350px);
+    }
+
+    .card-description {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    /* Certification Line */
+    .cert-line {
+      display: flex;
+      align-items: center;
+      color: #777;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .cert-line i {
+      color: #d4af37;
+      margin-right: 8px;
+      font-size: 1.1rem;
+    }
+
+    /* Green Service Card Styling */
+    .service-card {
+      background-color: var(--service-green);
+      color: #ffffff;
+      padding: 10px;
+    }
+
+    .job-card:hover,
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-body {
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    /* Icons */
+    .header-icon-wrap {
+      width: 50px;
+      height: 50px;
+      background-color: var(--icon-bg-light);
+      color: var(--primary-dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-icon {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.3;
+    }
+
+    .job-card .card-title {
+      color: var(--primary-dark);
+    }
+
+    .service-card .card-title {
+      color: #ffffff;
+    }
+
+    /* Details & Text */
+    .detail-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.25rem;
+    }
+
+    .detail-icon-wrap {
+      color: var(--accent-teal);
+      font-size: 1.1rem;
+      margin-right: 12px;
+    }
+
+    .detail-label {
+      color: var(--secondary-text);
+      font-size: 0.85rem;
+      font-weight: 500;
+      display: block;
+    }
+
+    .detail-value {
+      color: #212529;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .service-desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+      opacity: 0.9;
+    }
+
+    /* Buttons */
+    .btn-custom-outline {
+      color: var(--primary-dark);
+      border: 2px solid var(--primary-dark);
+      font-weight: 600;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: auto;
+      width: 100%;
+      text-decoration: none;
+      text-align: center;
+    }
+
+    .btn-white {
+      background-color: #ffffff;
+      color: var(--service-green);
+      border: none;
+      font-weight: 700;
+      padding: 14px;
+      border-radius: 10px;
+      margin-top: auto;
+      width: 100%;
+      text-decoration: none;
+      text-align: center;
+      transition: opacity 0.2s;
+    }
+
+    .btn-white:hover {
+      opacity: 0.9;
+      color: var(--service-green);
+    }
+
+    .countries-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 40px 0;
+    }
+
+    .country-card {
+      background: white;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      border-top: 4px solid var(--gold);
+      /* The gold top border */
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .country-card h3 {
+      color: var(--navy);
+      font-size: 1.1rem;
+      margin: 10px 0;
+    }
+
+    .count-text {
+      color: var(--forest);
+      font-weight: bold;
+    }
+
+    /* --- Partners Section Styling --- */
+    .partners-container {
+      background: white;
+      border-radius: 20px;
+      padding: 50px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+      text-align: center;
+    }
+
+    .header-icon {
+      font-size: 2.5rem;
+      color: var(--navy);
+      margin-bottom: 15px;
+    }
+
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      margin: 40px 0;
+    }
+
+    .partner-card {
+      background: var(--light-gray);
+      padding: 20px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    .partner-card i {
+      margin-bottom: 8px;
+      opacity: 0.5;
+    }
+
+    /* --- Statistics Bar (The Bottom Section) --- */
+    .stats-bar {
+      display: flex;
+      border-radius: 15px;
+      overflow: hidden;
+      margin-top: 40px;
+      /* This creates the blue to green split background */
+      background: linear-gradient(to right, var(--navy) 33.33%, var(--forest) 33.33%);
+    }
+
+    .stat-item {
+      flex: 1;
+      padding: 30px;
+      color: white;
+    }
+
+    .stat-number {
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--gold);
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+
+    /* Responsiveness */
+    @media (max-width: 992px) {
+
+      .countries-grid,
+      .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      .countries-grid,
+      .partners-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .stats-bar {
+        flex-direction: column;
+        background: var(--navy);
+      }
+    }
   </style>
 </head>
 
@@ -170,7 +506,7 @@
         <div class="row align-items-center row-bg1">
           <div class="col-lg-2 col-md-6 col-6">
             <div class="vl-logo">
-              <a href="index.html"><img src="assets/img/logo/logo1.png" alt=""></a>
+              <a href="index.html"><img src="assets/img/logo.png" alt="Logo"></a>
             </div>
           </div>
           <div class="col-lg-8 d-none d-lg-block">
@@ -178,197 +514,12 @@
               <nav class="vl-mobile-menu-active">
                 <ul>
                   <li class="has-dropdown">
-                    <a href="#">Home <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
-                    <div class="vl-mega-menu">
-                      <div class="vl-home-menu">
-                        <div class="row gx-3 row-cols-1 row-cols-md-1 row-cols-lg-5">
-                          <div class="col">
-                            <div class="vl-home-thumb">
-                              <div class="img1">
-                                <img src="assets/img/all-images/demo/demo-img1.png" alt="">
-                              </div>
-                              <a href="index.html">Staffx - Homepage 01</a>
-                              <div class="btn-area1">
-                                <a href="index.html" class="vl-btn1">View Demo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-
-                              </div>
-                              <div class="space20 d-lg-none d-block"></div>
-                            </div>
-                          </div>
-                          <div class="col">
-                            <div class="vl-home-thumb">
-                              <div class="img1">
-                                <img src="assets/img/all-images/demo/demo-img2.png" alt="">
-                              </div>
-                              <a href="index2.html">Staffx - Homepage 02</a>
-                              <div class="btn-area1">
-                                <a href="index2.html" class="vl-btn1">View Demo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-
-                              </div>
-                              <div class="space20 d-lg-none d-block"></div>
-                            </div>
-                          </div>
-                          <div class="col ">
-                            <div class="vl-home-thumb">
-                              <div class="img1">
-                                <img src="assets/img/all-images/demo/demo-img3.png" alt="">
-                              </div>
-                              <a href="index3.html">Staffx - Homepage 03</a>
-                              <div class="btn-area1">
-                                <a href="index3.html" class="vl-btn1">View Demo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-
-                              </div>
-                              <div class="space20 d-lg-none d-block"></div>
-                            </div>
-                          </div>
-                          <div class="col ">
-                            <div class="vl-home-thumb">
-                              <div class="img1">
-                                <img src="assets/img/all-images/demo/demo-img4.png" alt="">
-                              </div>
-                              <a href="index4.html">Staffx - Homepage 04</a>
-                              <div class="btn-area1">
-                                <a href="index4.html" class="vl-btn1">View Demo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-
-                              </div>
-                              <div class="space20 d-lg-none d-block"></div>
-                            </div>
-                          </div>
-
-                          <div class="col ">
-                            <div class="vl-home-thumb">
-                              <div class="img1">
-                                <img src="assets/img/all-images/demo/demo-img5.png" alt="">
-                              </div>
-                              <a href="index5.html">Staffx - Homepage 05</a>
-                              <div class="btn-area1">
-                                <a href="index5.html" class="vl-btn1">View Demo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col ">
-                            <div class="vl-home-thumb">
-                              <div class="img1">
-                                <img src="assets/img/all-images/demo/demo-img6.png" alt="">
-                              </div>
-                              <a href="index6.html">Staffx - Homepage 06</a>
-                              <div class="btn-area1">
-                                <a href="index6.html" class="vl-btn1">View Demo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col ">
-                            <div class="vl-home-thumb">
-                              <div class="img1">
-                                <img src="assets/img/all-images/demo/demo-img7.png" alt="">
-                              </div>
-                              <a href="index7.html">Staffx - Homepage 07</a>
-                              <div class="btn-area1">
-                                <a href="index7.html" class="vl-btn1">View Demo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="col ">
-                            <div class="vl-home-thumb">
-                              <div class="img1">
-                                <img src="assets/img/all-images/demo/demo-img8.png" alt="">
-                              </div>
-                              <a href="index8.html">Staffx - Homepage 08</a>
-                              <div class="btn-area1">
-                                <a href="index8.html" class="vl-btn1">View Demo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col ">
-                            <div class="vl-home-thumb">
-                              <div class="img1">
-                                <img src="assets/img/all-images/demo/demo-img9.png" alt="">
-                              </div>
-                              <a href="index9.html">Staffx - Homepage 09</a>
-                              <div class="btn-area1">
-                                <a href="index9.html" class="vl-btn1">View Demo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col ">
-                            <div class="vl-home-thumb">
-                              <div class="img1">
-                                <img src="assets/img/all-images/demo/demo-img10.png" alt="">
-                              </div>
-                              <a href="index10.html">Staffx - Homepage 10</a>
-                              <div class="btn-area1">
-                                <a href="index10.html" class="vl-btn1">View Demo <i
-                                    class="fa-solid fa-arrow-right"></i></a>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <a href="#">Home </a>
                   </li>
-                  <li class="has-dropdown">
-                    <a href="#">Pages <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
-                    <ul class="sub-menu">
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="team.html">Our Team</a></li>
-                      <li><a href="testimonial.html">Testimonials</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                      <li><a href="404.html">404</a></li>
-                    </ul>
-                  </li>
-
-                  <li><a href="#">Services <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
-                    <ul class="sub-menu">
-                      <li><a href="service.html">Our Service</a></li>
-                      <li><a href="#" class="span-arrow">Service Details <span><i
-                              class="fa-solid fa-angle-right d-lg-block d-none"></i></span></a>
-                        <ul class="sub-menu menu1">
-                          <li><a href="service-left.html">Service Left</a></li>
-                          <li><a href="service-right.html">Service Right</a></li>
-                          <li><a href="service-single.html">Service Single</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-
-                  <li><a href="#">Projects <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
-                    <ul class="sub-menu">
-                      <li><a href="projects.html">Our Projects</a></li>
-                      <li><a href="#" class="span-arrow">Project Details <span><i
-                              class="fa-solid fa-angle-right d-lg-block d-none"></i></span></a>
-                        <ul class="sub-menu menu1">
-                          <li><a href="projects-left.html">Projects Left</a></li>
-                          <li><a href="projects-right.html">Projects Right</a></li>
-                          <li><a href="projects-single.html">Projects Single</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li><a href="#">Blogs <span><i class="fa-solid fa-angle-down d-lg-inline d-none"></i></span></a>
-                    <ul class="sub-menu">
-                      <li><a href="blog.html">Our Blog</a></li>
-                      <li><a href="#" class="span-arrow">Blog Details <span><i
-                              class="fa-solid fa-angle-right d-lg-block d-none"></i></span></a>
-                        <ul class="sub-menu menu1">
-                          <li><a href="blog-left.html">Blog Left</a></li>
-                          <li><a href="blog-right.html">Blog Right</a></li>
-                          <li><a href="blog-single.html">Blog Single</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
+                  <li><a href="#">Services </a></li>
+                  <li><a href="#">About </a></li>
+                  <li><a href="#">Resources </a></li>
+                  <li><a href="#">Contact </a></li>
                 </ul>
               </nav>
             </div>
@@ -376,7 +527,7 @@
           <div class="col-lg-2 col-md-6 col-6">
             <div class="vl-hero-btn d-none d-lg-block text-end">
               <div class="hero-btn1">
-                <a href="contact.html" class="vl-btn1">Get Started<i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#" class="vl-btn1">Get Started<i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
             <div class="vl-header-action-item d-block d-lg-none">
@@ -458,8 +609,8 @@
               <p data-aos="fade-left" data-aos-duration="1100">Government Approved Recruitment Agency Since 2015
               </p>
               <div class="space24"></div>
-              <div class="btn-area1 text-left" data-aos="fade-left" data-aos-duration="1200">
-                <a href="#" class="vl-btn1">Apply Now - Free Consultation </a>
+              <div class="btn-area1 text-left d-flex align-center" data-aos="fade-left" data-aos-duration="1200">
+                <a href="#" class="vl-btn1">Apply Now</a>
                 <div class="space6"></div>
                 <a href="#" class="vl-btn1 btn2">Employer Portal </a>
               </div>
@@ -532,7 +683,7 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="100">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-offset="100">
           <div class="service-boxarea2">
             <div class="content-area">
               <a href="#" class="title">Voice Registration
@@ -548,7 +699,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="100">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
           <div class="service-boxarea2">
             <div class="content-area">
               <a href="#" class="title">SMS Registration
@@ -579,7 +730,7 @@
           </div>
         </div>
 
-        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1400">
           <div class="service-boxarea">
             <div class="space24"></div>
             <div class="img1 text-center">
@@ -587,7 +738,7 @@
             </div>
             <div class="space24"></div>
             <div class="content-area text-center">
-              <a href="#" class="title">Need Help? Call Anytime</a>
+              <span class="title">Need Help? Call Anytime</span>
               <div class="space16"></div>
               <h3>16000</h3>
               <div class="space24"></div>
@@ -595,7 +746,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1600">
           <div class="service-boxarea">
             <div class="space24"></div>
             <div class="img1 text-center">
@@ -603,7 +754,7 @@
             </div>
             <div class="space24"></div>
             <div class="content-area text-center">
-              <a href="#" class="title">WhatsApp Help</a>
+              <span class="title">WhatsApp Help</span>
               <div class="space16"></div>
               <h3>+880 1700-000000</h3>
               <div class="space24"></div>
@@ -616,14 +767,14 @@
 
       <div class="row justify-content-center">
         <div class="col-lg-8">
-          <div class="service-boxarea">
+          <div class="service-boxarea" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="100">
             <div class="space24"></div>
             <div class="img1 text-center">
               <i style="color:#FB8500; font-size: 25px;" class="fa-solid fa-map-location"></i>
             </div>
             <div class="space24"></div>
             <div class="content-area text-center">
-              <a href="#" class="title">Our Offices</a>
+              <span class="title">Our Offices</span>
               <div class="space16"></div>
               <div class="d-flex flex-wrap">
                 <div class="single" style="flex:0 0 50%;max-width:50%;">
@@ -921,7 +1072,7 @@
                   <h2 data-aos="zoom-in" data-aos-duration="800">These could be your success stories too!</h2>
                   <div class="space16"></div>
                   <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
-                    <a href="contact.html" class="vl-btn7"><span class="text">Apply Now - Free Consultation</span><span
+                    <a href="#" class="vl-btn7"><span class="text">Apply Now - Free Consultation</span><span
                         class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
                   </div>
                 </div>
@@ -1064,10 +1215,10 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" style="row-gap: 30px;">
 
         <div class="col-lg-4 col-md-6">
-          <div class="job-card">
+          <div class="job-card " data-aos="fade-up" data-aos-duration="800" data-aos-offset="100">
             <div class="card-body">
               <div class="header-icon-wrap">
                 <i class="fa-solid fa-helmet-safety"></i>
@@ -1114,7 +1265,7 @@
 
 
         <div class="col-lg-4 col-md-6">
-          <div class="job-card">
+          <div class="job-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
             <div class="card-body">
               <div class="header-icon-wrap">
                 <i class="fa-regular fa-heart"></i>
@@ -1161,7 +1312,7 @@
 
 
         <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="job-card">
+          <div class="job-card" data-aos="fade-up" data-aos-duration="1100" data-aos-offset="100">
             <div class="card-body">
               <div class="header-icon-wrap">
                 <i class="fa-solid fa-shirt"></i>
@@ -1207,7 +1358,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="job-card">
+          <div class="job-card" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="100">
             <div class="card-body">
               <div class="header-icon-wrap">
                 <i class="fa-solid fa-shirt"></i>
@@ -1253,7 +1404,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="job-card">
+          <div class="job-card" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="100">
             <div class="card-body">
               <div class="header-icon-wrap">
                 <i class="fa-solid fa-shirt"></i>
@@ -1299,7 +1450,7 @@
         </div>
 
         <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="job-card">
+          <div class="job-card" data-aos="fade-up" data-aos-duration="1600" data-aos-offset="100">
             <div class="card-body">
               <div class="header-icon-wrap">
                 <i class="fa-solid fa-shirt"></i>
@@ -1345,6 +1496,21 @@
         </div>
 
 
+        <div class="col-lg-4 col-md-6">
+          <div class="service-card" data-aos="fade-up" data-aos-duration="1700" data-aos-offset="100">
+            <div class="card-body text-center">
+              <div class="service-icon">
+                <i class="fa-solid fa-plane-up"></i>
+              </div>
+              <h2 class="card-title">Hajj & Umrah Services</h2>
+              <p class="service-desc">
+                Complete Hajj & Umrah packages with 5-star accommodation,
+                certified guides, and visa processing.
+              </p>
+              <a href="#" class="btn-white">View Packages</a>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -1353,326 +1519,313 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
   <!--===== ABOUT AREA STARTS =======-->
   <div class="about1 sp1">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="about-images" data-aos="zoom-out" data-aos-duration="1000">
-            <img src="assets/img/elements/elements1.png" alt="" class="elements1 keyframe5">
-            <div class="img1">
-              <img src="assets/img/all-images/about/about-img1.png" alt="">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="about-heading heading1 text-center">
+            <div class="space16"></div>
+            <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Our Leadership Team</h2>
+            <div class="space16"></div>
+            <p data-aos="fade-left" data-aos-duration="1100">Led by experienced professionals committed to ethical
+              recruitment</p>
+            <div class="space32"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="profile-card" data-aos="fade-right" data-aos-duration="700">
+            <div class="card-image-wrapper">
+              <img src="assets/img/all-images/service/service-img1.png" alt="Dr. Kamal Hossain">
+              <div class="image-overlay">
+                <div class="overlay-name">Dr. Kamal Hossain</div>
+                <div class="overlay-title">Managing Director</div>
+                <div class="overlay-exp">25+ Years Experience</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-description">
+                Former IOM consultant with deep commitment to ethical recruitment and rural empowerment.
+              </p>
+              <div class="cert-line">
+                <i class="fa-solid fa-award"></i> IOM/RBA Certified
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="about-heading heading1">
-            <h5 class="vl-section-subtitle" data-aos="fade-left" data-aos-duration="900"><svg
-                xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path
-                  d="M9.45001 17.8772C14.2115 17.6442 18 13.7338 18 8.94408C18 7.4743 17.6433 6.08732 17.0111 4.86399C14.4764 6.3183 13.2091 7.04546 12.2507 8.02546C11.1061 9.19582 10.2724 10.6308 9.82481 12.201C9.45001 13.5159 9.45001 14.9697 9.45001 17.8772Z"
-                  fill="#FB8500" />
-                <path
-                  d="M8.55001 17.8772C3.78851 17.6442 0 13.7338 0 8.94408C0 7.47429 0.356744 6.08731 0.988876 4.86398C3.52358 6.3183 4.79093 7.04546 5.74937 8.02547C6.89397 9.19583 7.72761 10.6308 8.17521 12.2011C8.55001 13.5159 8.55001 14.9697 8.55001 17.8772Z"
-                  fill="#FB8500" />
-                <path
-                  d="M1.43959 4.08981C3.97405 5.54399 5.24127 6.27107 6.57492 6.60594C8.16664 7.00559 9.83338 7.00559 11.4251 6.60594C12.7587 6.27108 14.026 5.54399 16.5604 4.08982C14.9571 1.62862 12.1699 0 9 0C5.8301 0 3.04295 1.62862 1.43959 4.08981Z"
-                  fill="#FB8500" />
-              </svg> aBOUT US</h5>
-            <div class="space16"></div>
-            <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Bridging the Gap Between Talent
-              and Opportunity</h2>
-            <div class="space16"></div>
-            <p data-aos="fade-left" data-aos-duration="1100">From temporary staffing to placements, we provide
-              personalized strategies to meet your workforce goals and career aspirations.</p>
-            <div class="row">
-              <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-duration="900">
-                <div class="about-boxarea">
-                  <div class="icons">
-                    <img src="assets/img/icons/about-icons1.svg" alt="">
-                  </div>
-                  <div class="space24"></div>
-                  <div class="texrarea">
-                    <a href="service-single.html" class="title">A Legacy of Excellence in Staffing Solutions</a>
-                    <div class="space24"></div>
-                    <p>With years of experience, we’ve built a reputation for the providing, customized.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-6 col-md-6" data-aos="zoom-in" data-aos-duration="1000">
-                <div class="about-boxarea">
-                  <div class="icons">
-                    <img src="assets/img/icons/about-icons2.svg" alt="">
-                  </div>
-                  <div class="space24"></div>
-                  <div class="texrarea">
-                    <a href="service-single.html" class="title">Tailored Solutions, Proven Results</a>
-                    <div class="space24"></div>
-                    <p>From temporary staffing to executive placements, we personalized strategies.</p>
-                  </div>
-                </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="profile-card" data-aos="fade-right" data-aos-duration="900">
+            <div class="card-image-wrapper">
+              <img src="assets/img/all-images/service/service-img1.png" alt="Nasrin Ahmed">
+              <div class="image-overlay">
+                <div class="overlay-name">Nasrin Ahmed</div>
+                <div class="overlay-title">Chief Operating Officer</div>
+                <div class="overlay-exp">18+ Years Experience</div>
               </div>
             </div>
-            <div class="space32"></div>
-            <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
-              <a href="about.html" class="vl-btn1">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="card-content">
+              <p class="card-description">
+                Expert in global operations and compliance, ensuring transparent processes.
+              </p>
+              <div class="cert-line">
+                <i class="fa-solid fa-award"></i> IOM/RBA Certified
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <div class="profile-card" data-aos="fade-right" data-aos-duration="1100">
+            <div class="card-image-wrapper">
+              <img src="assets/img/all-images/service/service-img1.png" alt="Mohammad Rahim">
+              <div class="image-overlay">
+                <div class="overlay-name">Mohammad Rahim</div>
+                <div class="overlay-title">Head of Recruitment</div>
+                <div class="overlay-exp">15+ Years Experience</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <p class="card-description">
+                Dedicated to matching rural talent with international opportunities.
+              </p>
+              <div class="cert-line">
+                <i class="fa-solid fa-award"></i> IOM/RBA Certified
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="space24"></div>
+    <div class="space24"></div>
+    <div class="space24"></div>
+    <div class="main-container">
+
+      <div class="certifications-wrapper" data-aos="zoom-in" data-aos-duration="800">
+        <h2 class="section-title">Our Certifications & Memberships</h2>
+        <div class="cert-grid">
+          <div class="cert-card" data-aos="fade-right" data-aos-duration="800">
+            <i class="fa-solid fa-shield-halved icon-blue"></i>
+            <h3>BMET Licensed</h3>
+            <p>RL-1234/2015</p>
+          </div>
+          <div class="cert-card" data-aos="fade-right" data-aos-duration="1000">
+            <i class="fa-solid fa-globe icon-blue"></i>
+            <h3>IOM Partner</h3>
+            <p>UN Migration</p>
+          </div>
+          <div class="cert-card" data-aos="fade-right" data-aos-duration="1200">
+            <i class="fa-solid fa-ribbon icon-blue"></i>
+            <h3>RBA Certified</h3>
+            <p>Fair Recruitment</p>
+          </div>
+          <div class="cert-card" data-aos="fade-right" data-aos-duration="1400">
+            <i class="fa-solid fa-users icon-blue"></i>
+            <h3>BAIRA Member</h3>
+            <p>Full Member</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mission-vision-grid">
+        <div class="mv-box mission" data-aos="fade-right" data-aos-duration="800">
+          <div class="mv-icon"><i class="fa-solid fa-shield-halved"></i></div>
+          <h2>Our Mission</h2>
+          <p>Empowering rural Bangladesh through ethical international recruitment, providing transparent pathways to
+            global opportunities while ensuring worker welfare and dignity.</p>
+        </div>
+        <div class="mv-box vision" data-aos="fade-left" data-aos-duration="800">
+          <div class="mv-icon"><i class="fa-solid fa-globe"></i></div>
+          <h2>Our Vision</h2>
+          <p>To become Bangladesh's most trusted overseas recruitment partner, setting the gold standard for worker
+            welfare, transparency, and ethical practices in the industry.</p>
+        </div>
+      </div>
+
+      <div class="values-section">
+        <h2 class="section-title" data-aos="zoom-in" data-aos-duration="800">Our Core Values</h2>
+        <div class="values-flex">
+          <span class="value-pill" data-aos="fade-up" data-aos-duration="800"><i class="fa-solid fa-medal"></i>
+            Integrity</span>
+          <span class="value-pill" data-aos="fade-up" data-aos-duration="1000"><i class="fa-solid fa-medal"></i>
+            Excellence</span>
+          <span class="value-pill" data-aos="fade-up" data-aos-duration="1200"><i class="fa-solid fa-medal"></i>
+            Compassion</span>
+        </div>
+      </div>
+
     </div>
   </div>
   <!--===== ABOUT AREA ENDS =======-->
 
 
-
-  <!--===== TESTIMONISL AREA STARTS =======-->
-  <div class="testi1 sp1"
-    style="background-image: url(assets/img/all-images/bg/section-bg2.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
+  <!--===== Employers AREA STARTS =======-->
+  <div class="service1 sp2"
+    style="background-image: url(assets/img/all-images/bg/section-bg1.png); background-position: center; background-repeat: no-repeat; background-size: cover;">
     <div class="container">
       <div class="row">
-        <div class="col-lg-6">
-          <div class="testimonial-img1" data-aos="zoom-out" data-aos-duration="1000">
-            <img src="assets/img/all-images/testimonial/testimonial-img1.png" alt="">
+        <div class="col-lg-6 m-auto">
+          <div class="heading1 text-center space-margin60">
+            <div class="space16"></div>
+            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">Trusted by Global Employers</h2>
+            <div class="space16"></div>
+            <p data-aos="zoom-in" data-aos-duration="1100">Active Recruitment Countries </p>
           </div>
         </div>
+      </div>
 
-        <div class="col-lg-6">
-          <div class="testimonial-slider-title heading1">
-            <h5 class="vl-section-subtitle" data-aos="zoom-in" data-aos-duration="900"><svg
-                xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path
-                  d="M9.45001 17.8772C14.2115 17.6442 18 13.7338 18 8.94408C18 7.4743 17.6433 6.08732 17.0111 4.86399C14.4764 6.3183 13.2091 7.04546 12.2507 8.02546C11.1061 9.19582 10.2724 10.6308 9.82481 12.201C9.45001 13.5159 9.45001 14.9697 9.45001 17.8772Z"
-                  fill="#FB8500" />
-                <path
-                  d="M8.55001 17.8772C3.78851 17.6442 0 13.7338 0 8.94408C0 7.47429 0.356744 6.08731 0.988876 4.86398C3.52358 6.3183 4.79093 7.04546 5.74937 8.02547C6.89397 9.19583 7.72761 10.6308 8.17521 12.2011C8.55001 13.5159 8.55001 14.9697 8.55001 17.8772Z"
-                  fill="#FB8500" />
-                <path
-                  d="M1.43959 4.08981C3.97405 5.54399 5.24127 6.27107 6.57492 6.60594C8.16664 7.00559 9.83338 7.00559 11.4251 6.60594C12.7587 6.27108 14.026 5.54399 16.5604 4.08982C14.9571 1.62862 12.1699 0 9 0C5.8301 0 3.04295 1.62862 1.43959 4.08981Z"
-                  fill="#FB8500" />
-              </svg> Testimonial</h5>
-            <div class="space16"></div>
-            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">Trusted by Businesses and
-              Professionals</h2>
-            <div class="space48"></div>
-            <div class="testimonial-slider">
-              <div class="testimonial-boxarea">
-                <ul>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="space20"></div>
-                <p class="pera">“We take pride in the lasting relationships we build with our clients and candidates.
-                  Their success is our success, & nothing speaks louder than their stories.”</p>
-                <div class="space32"></div>
-                <div class="author-images-area">
-                  <div class="auhtor-images">
-                    <div class="img1">
-                      <img src="assets/img/all-images/others/author-img1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <a href="#">Alex Ferguson</a>
-                      <div class="space16"></div>
-                      <p>CEO, Ranboz Ltd</p>
-                    </div>
-                  </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <g clip-path="url(#clip0_328_3846)">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M24 30L27.2 20.1818H24V12L32 12L32 20.1818L28.8 30L24 30Z" fill="white" />
-                      <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
-                        d="M10 30L13.2 20.1818H10V12L18 12V20.1818L14.8 30L10 30Z" fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_328_3846">
-                        <rect width="40" height="40" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-              </div>
-              <div class="testimonial-boxarea">
-                <ul>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                  <li><i class="fa-solid fa-star"></i></li>
-                </ul>
-                <div class="space20"></div>
-                <p class="pera">“We take pride in the lasting relationships we build with our clients and candidates.
-                  Their success is our success, & nothing speaks louder than their stories.”</p>
-                <div class="space32"></div>
-                <div class="author-images-area">
-                  <div class="auhtor-images">
-                    <div class="img1">
-                      <img src="assets/img/all-images/others/author-img1.png" alt="">
-                    </div>
-                    <div class="text">
-                      <a href="#">Alex Ferguson</a>
-                      <div class="space16"></div>
-                      <p>CEO, Ranboz Ltd</p>
-                    </div>
-                  </div>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                    <g clip-path="url(#clip0_328_3846)">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M24 30L27.2 20.1818H24V12L32 12L32 20.1818L28.8 30L24 30Z" fill="white" />
-                      <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd"
-                        d="M10 30L13.2 20.1818H10V12L18 12V20.1818L14.8 30L10 30Z" fill="white" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_328_3846a">
-                        <rect width="40" height="40" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div>
-              </div>
+      <div class="countries-section">
+        <div class="countries-grid">
+          <div class="country-card" data-aos="fade-up" data-aos-duration="700">
+            <img src="path-to-saudi-flag.png" alt="Saudi Arabia Flag" class="flag-icon">
+            <h3>Saudi Arabia</h3>
+            <p class="worker-count"><span>1500+</span> Workers</p>
+          </div>
+
+          <div class="country-card" data-aos="fade-up" data-aos-duration="800">
+            <img src="path-to-uae-flag.png" alt="UAE Flag" class="flag-icon">
+            <h3>UAE</h3>
+            <p class="worker-count"><span>1200+</span> Workers</p>
+          </div>
+
+          <div class="country-card" data-aos="fade-up" data-aos-duration="900">
+            <img src="path-to-qatar-flag.png" alt="Qatar Flag" class="flag-icon">
+            <h3>Qatar</h3>
+            <p class="worker-count"><span>800+</span> Workers</p>
+          </div>
+
+          <div class="country-card" data-aos="fade-up" data-aos-duration="1000">
+            <img src="path-to-malaysia-flag.png" alt="Malaysia Flag" class="flag-icon">
+            <h3>Malaysia</h3>
+            <p class="worker-count"><span>600+</span> Workers</p>
+          </div>
+
+          <div class="country-card" data-aos="fade-up" data-aos-duration="1100">
+            <img src="path-to-singapore-flag.png" alt="Singapore Flag" class="flag-icon">
+            <h3>Singapore</h3>
+            <p class="worker-count"><span>400+</span> Workers</p>
+          </div>
+
+          <div class="country-card" data-aos="fade-up" data-aos-duration="1200">
+            <img src="path-to-oman-flag.png" alt="Oman Flag" class="flag-icon">
+            <h3>Oman</h3>
+            <p class="worker-count"><span>350+</span> Workers</p>
+          </div>
+
+          <div class="country-card" data-aos="fade-up" data-aos-duration="1300">
+            <img src="path-to-kuwait-flag.png" alt="Kuwait Flag" class="flag-icon">
+            <h3>Kuwait</h3>
+            <p class="worker-count"><span>300+</span> Workers</p>
+          </div>
+
+          <div class="country-card" data-aos="fade-up" data-aos-duration="1400">
+            <img src="path-to-bahrain-flag.png" alt="Bahrain Flag" class="flag-icon">
+            <h3>Bahrain</h3>
+            <p class="worker-count"><span>200+</span> Workers</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <!--===== Employers AREA ENDS =======-->
+
+
+
+  <section class="partners-container main-section-area">
+    <div class="partners-header">
+      <i class="fa-solid fa-building-user header-icon"></i>
+      <h2>Trusted Partner Companies</h2>
+      <p>Working with leading international employers across multiple sectors</p>
+    </div>
+
+
+    <div class="partners-grid">
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="500">
+        <i class="fa-solid fa-globe"></i><span>Saudi Binladin Group</span>
+      </div>
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="600">
+        <i class="fa-solid fa-globe"></i><span>Emaar Properties</span>
+      </div>
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="700">
+        <i class="fa-solid fa-globe"></i><span>Qatar Petroleum</span>
+      </div>
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="800">
+        <i class="fa-solid fa-globe"></i><span>Petronas Malaysia</span>
+      </div>
+
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="500">
+        <i class="fa-solid fa-globe"></i><span>Sembcorp Singapore</span>
+      </div>
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="600">
+        <i class="fa-solid fa-globe"></i><span>Oman Construction Co.</span>
+      </div>
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="700">
+        <i class="fa-solid fa-globe"></i><span>Al-Futtaim Group</span>
+      </div>
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="800">
+        <i class="fa-solid fa-globe"></i><span>Majid Al Futtaim</span>
+      </div>
+
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="500">
+        <i class="fa-solid fa-globe"></i><span>Lulu Group International</span>
+      </div>
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="600">
+        <i class="fa-solid fa-globe"></i><span>National Hospital</span>
+      </div>
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="700">
+        <i class="fa-solid fa-globe"></i><span>Raffles Medical Group</span>
+      </div>
+      <div class="partner-card" data-aos="fade-up" data-aos-duration="800">
+        <i class="fa-solid fa-globe"></i><span>KPJ Healthcare</span>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="counter-section-area" style="position: unset;" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-6 col-md-4">
+            <div class="counter-boxarea">
+              <h2><span class="counter">12</span>+</h2>
+              <div class="space16"></div>
+              <p>Years of Partnership</p>
             </div>
+          </div>
 
-            <div class="testimonial-arrow">
-              <div class="prev-arrow1">
-                <button><i class="fa-solid fa-arrow-left"></i></button>
-              </div>
-              <div class="next-arrow1">
-                <button><i class="fa-solid fa-arrow-right"></i></button>
-              </div>
+          <div class="col-lg-4 col-6 col-md-4">
+            <div class="counter-boxarea">
+              <h2><span class="counter">100</span>+</h2>
+              <div class="space16"></div>
+              <p>Partner Companies</p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-6 col-md-4">
+            <div class="space20 d-md-none d-block"></div>
+            <div class="counter-boxarea">
+              <h2><span class="counter">25</span>+</h2>
+              <div class="space16"></div>
+              <p>Countries</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--===== TESTIMONISL AREA ENDS =======-->
+  </section>
 
-  <!--===== CASE AREA STARTS =======-->
-  <div class="case1-section sp1">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="heading1 space-margin60">
-            <h5 class="vl-section-subtitle" data-aos="zoom-in" data-aos-duration="900"><svg
-                xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path
-                  d="M9.45001 17.8772C14.2115 17.6442 18 13.7338 18 8.94408C18 7.4743 17.6433 6.08732 17.0111 4.86399C14.4764 6.3183 13.2091 7.04546 12.2507 8.02546C11.1061 9.19582 10.2724 10.6308 9.82481 12.201C9.45001 13.5159 9.45001 14.9697 9.45001 17.8772Z"
-                  fill="#FB8500" />
-                <path
-                  d="M8.55001 17.8772C3.78851 17.6442 0 13.7338 0 8.94408C0 7.47429 0.356744 6.08731 0.988876 4.86398C3.52358 6.3183 4.79093 7.04546 5.74937 8.02547C6.89397 9.19583 7.72761 10.6308 8.17521 12.2011C8.55001 13.5159 8.55001 14.9697 8.55001 17.8772Z"
-                  fill="#FB8500" />
-                <path
-                  d="M1.43959 4.08981C3.97405 5.54399 5.24127 6.27107 6.57492 6.60594C8.16664 7.00559 9.83338 7.00559 11.4251 6.60594C12.7587 6.27108 14.026 5.54399 16.5604 4.08982C14.9571 1.62862 12.1699 0 9 0C5.8301 0 3.04295 1.62862 1.43959 4.08981Z"
-                  fill="#FB8500" />
-              </svg> Case Studies</h5>
-            <div class="space16"></div>
-            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">Transforming Businesses, Advancing
-              Careers</h2>
-            <div class="space16"></div>
-            <p data-aos="zoom-in" data-aos-duration="1100">Our case studies showcase the real-world impact of our
-              staffing solutions. From helping businesses overcome recruitment.</p>
-          </div>
-        </div>
-        <div class="col-lg-4"></div>
-        <div class="col-lg-2">
-          <div class="testimonial-arrow text-end">
-            <div class="prev-arrow">
-              <button><i class="fa-solid fa-arrow-left"></i></button>
-            </div>
-            <div class="next-arrow">
-              <button><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-lg-12" data-aos="zoom-out" data-aos-duration="1000">
-          <div class="case-slider-area">
-            <div class="case-boxes-area">
-              <div class="img1">
-                <img src="assets/img/all-images/case/case-img1.png" alt="">
-              </div>
-              <div class="text-area">
-                <h5>staffing solution</h5>
-                <div class="space16"></div>
-                <a href="#" class="title">Career Path Solutions</a>
-                <div class="space16"></div>
-                <p>Explore we’ve made a difference and discover the possibilities .</p>
-                <div class="arrow">
-                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
 
-            <div class="case-boxes-area">
-              <div class="img1">
-                <img src="assets/img/all-images/case/case-img2.png" alt="">
-              </div>
 
-              <div class="text-area">
-                <h5>staffing solution</h5>
-                <div class="space16"></div>
-                <a href="#" class="title">Talent Bridge Initiative</a>
-                <div class="space16"></div>
-                <p>Explore we’ve made a difference and discover the possibilities .</p>
-                <div class="arrow">
-                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="case-boxes-area">
-              <div class="img1">
-                <img src="assets/img/all-images/case/case-img3.png" alt="">
-              </div>
-              <div class="text-area">
-                <h5>staffing solution</h5>
-                <div class="space16"></div>
-                <a href="#" class="title">FutureReady Staffing</a>
-                <div class="space16"></div>
-                <p>Explore we’ve made a difference and discover the possibilities .</p>
-                <div class="arrow">
-                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="case-boxes-area">
-              <div class="img1">
-                <img src="assets/img/all-images/case/case-img4.png" alt="">
-              </div>
-              <div class="text-area">
-                <h5>staffing solution</h5>
-                <div class="space16"></div>
-                <a href="#" class="title">SuccessMatch Program</a>
-                <div class="space16"></div>
-                <p>Explore we’ve made a difference and discover the possibilities .</p>
-                <div class="arrow">
-                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--===== CASE AREA ENDS =======-->
 
 
 
@@ -1683,10 +1836,11 @@
       <div class="row">
         <div class="col-lg-3 col-md-6">
           <div class="footer-logo-area">
-            <img src="assets/img/logo/logo1.png" alt="">
+            <!-- <img src="assets/img/logo/logo1.png" alt=""> -->
+             <h4>NAVIRA LTD</h4>
+             <h6>BMET Licensed & Verified</h6>
             <div class="space16"></div>
-            <p>We’re committed to delivering top-quality roofing service that protect your home & enhance it value. With
-              years of expertise focus customer.</p>
+            <p>Your trusted partner for international employment since 2015. Government approved, BMET licensed, and committed to ethical recruitment practices.</p>
             <div class="space24"></div>
             <ul class="social-links">
               <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -1702,40 +1856,26 @@
           <div class="footer-widget-area foot-padding1">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="service.html">Our Service</a></li>
-              <li><a href="service.html">Our Solution</a></li>
-              <li><a href="blog.html">Our Blog</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Rural Registration </a></li>
+              <li><a href="#">Job Openings </a></li>
+              <li><a href="#">Training Centers </a></li>
             </ul>
           </div>
         </div>
 
-        <div class="col-lg col-md-6">
-          <div class="space30 d-lg-none d-block"></div>
-          <div class="footer-widget-area foot-padding2">
-            <h3>Our Services</h3>
-            <ul>
-              <li><a href="#">Project-Based Solutions</a></li>
-              <li><a href="#">Direct Hire Placement</a></li>
-              <li><a href="#">Temporary Staffing</a></li>
-              <li><a href="#">Executive Search </a></li>
-              <li><a href="#">Front Line Support</a></li>
-            </ul>
-          </div>
-        </div>
 
         <div class="col-lg col-md-6">
           <div class="space30 d-lg-none d-block"></div>
           <div class="footer-widget-area">
             <h3>Contact Us</h3>
             <ul>
-              <li><a href="tel:+11234567890"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+              <li><a href="tel:+880 1700-000000"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none">
                     <path
                       d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94M18.5 21C9.93959 21 3 14.0604 3 5.5C3 5.11378 3.01413 4.73086 3.04189 4.35173C3.07375 3.91662 3.08968 3.69907 3.2037 3.50103C3.29814 3.33701 3.4655 3.18146 3.63598 3.09925C3.84181 3 4.08188 3 4.56201 3H7.37932C7.78308 3 7.98496 3 8.15802 3.06645C8.31089 3.12515 8.44701 3.22049 8.55442 3.3441C8.67601 3.48403 8.745 3.67376 8.88299 4.05321L10.0491 7.26005C10.2096 7.70153 10.2899 7.92227 10.2763 8.1317C10.2643 8.31637 10.2012 8.49408 10.0942 8.64506C9.97286 8.81628 9.77145 8.93713 9.36863 9.17882L8 10C9.2019 12.6489 11.3501 14.7999 14 16L14.8212 14.6314C15.0629 14.2285 15.1837 14.0271 15.3549 13.9058C15.5059 13.7988 15.6836 13.7357 15.8683 13.7237C16.0777 13.7101 16.2985 13.7904 16.74 13.9509L19.9468 15.117C20.3262 15.255 20.516 15.324 20.6559 15.4456C20.7795 15.553 20.8749 15.6891 20.9335 15.842C21 16.015 21 16.2169 21 16.6207V19.438C21 19.9181 21 20.1582 20.9007 20.364C20.8185 20.5345 20.663 20.7019 20.499 20.7963C20.3009 20.9103 20.0834 20.9262 19.6483 20.9581C19.2691 20.9859 18.8862 21 18.5 21Z"
                       stroke="#31353D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg> +1 123 456 7890</a></li>
+                  </svg> +880 1700-000000</a></li>
               <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                     fill="none">
                     <path
@@ -1744,13 +1884,13 @@
                     <path
                       d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
                       stroke="#31353D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg> 421 Allen, Mexico 4233</a></li>
-              <li><a href="mailto:medicaxhospital@com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                  </svg> Navira Ltd, Dhaka, Bangladesh</a></li>
+              <li><a href="mailto:info@naviraltd.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                     viewBox="0 0 24 24" fill="none">
                     <path
                       d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
                       stroke="#31353D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg> satffxsupport@com</a></li>
+                  </svg> info@naviraltd.com</a></li>
             </ul>
           </div>
         </div>
@@ -1758,7 +1898,7 @@
       <div class="space48"></div>
       <div class="col-lg-12">
         <div class="copyright-area">
-          <a href="#">Copyright @2025 STAFFX. All Rights Reserved</a>
+          <a href="#">Copyright @2025 Navira. All Rights Reserved</a>
           <ul>
             <li><a href="#">Privacy Policy</a><span> | </span></li>
             <li><a href="#">Terms Of Condition</a></li>
@@ -1784,6 +1924,6 @@
 
 </body>
 
-<!-- Mirrored from html.vikinglab.agency/staffx/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Jan 2026 13:36:46 GMT -->
+<!-- Mirrored from html.vikinglab.agency/Navira Ltd/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 04 Jan 2026 13:36:46 GMT -->
 
 </html>
