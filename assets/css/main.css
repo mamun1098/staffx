@@ -11156,7 +11156,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .hero2-arrow-hero .hero-main-slider .hero2-slider-area .hero2-heading h1 {
   color: var(--ztc-text-text-1);
   font-family: var(--ztc-family-font1);
-  font-size: var(--ztc-font-size-font-s60);
+  font-size: 55px;
   font-style: normal;
   font-weight: var(--ztc-weight-black);
   line-height: 68px;
