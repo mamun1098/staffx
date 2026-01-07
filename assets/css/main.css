@@ -2057,6 +2057,9 @@ img {
   }
 }
 
+.mb-100{
+  margin-bottom:100px;
+}
 .service1 .service-boxarea2 .content-area p {
   color: var(--ztc-text-text-3);
   font-family: var(--ztc-family-font1);
@@ -27122,11 +27125,13 @@ only screen and (min-width: 768px) and (max-width: 991px),
 }
 
 .mission {
-  background-color: #26416d;
+  background-color: #8FA3C8;
+  /* light blue, softer version of #26416d */
 }
 
 .vision {
-  background-color: #2d5a3e;
+  background-color: #9BC4AA;
+  /* light green, softer version of #2d5a3e */
 }
 
 .mv-icon {
@@ -27144,11 +27149,15 @@ only screen and (min-width: 768px) and (max-width: 991px),
 .mv-box h2 {
   margin-top: 0;
   font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
 }
+
 
 .mv-box p {
   line-height: 1.6;
   opacity: 0.9;
+  color: #333;
 }
 
 /* Core Values Section */
@@ -27650,14 +27659,14 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
 .partners-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 15px;
   margin: 40px 0;
 }
 
 .partner-card {
   background: var(--light-gray);
-  padding: 20px;
+  padding:25px 20px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -27722,7 +27731,7 @@ only screen and (min-width: 768px) and (max-width: 991px),
 
   .countries-grid,
   .partners-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
