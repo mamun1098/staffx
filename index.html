@@ -1,679 +1,484 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navira Ltd</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Navira Ltd</title>
+    <!--=====FAB ICON=======-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/logo/fav-logo1.png"
+      type="image/x-icon"
+    />
 
-  <!--=====FAB ICON=======-->
-  <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon" />
+    <!--===== CSS LINK =======-->
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/plugins/aos.css" />
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/plugins/slick-slider.css" />
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-  <!--===== CSS LINK =======-->
-  <link rel="stylesheet" href="assets/css/plugins/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/plugins/aos.css" />
-  <link rel="stylesheet" href="assets/css/plugins/fontawesome.css" />
-  <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css" />
-  <link rel="stylesheet" href="assets/css/plugins/slick-slider.css" />
-  <link rel="stylesheet" href="assets/css/plugins/nice-select.css" />
-  <link rel="stylesheet" href="assets/css/main.css" />
-</head>
-
-<body>
-  <!--===== PRELOADER STARTS =======-->
-  <div class="preloader">
-    <div class="loading-container">
-      <div class="loading"></div>
-      <div id="loading-icon">
-        <img src="assets/img/logo/preloder.png" alt="" />
-      </div>
-    </div>
-  </div>
-  <!--===== PRELOADER ENDS =======-->
-
-  <!--===== PROGRESS STARTS=======-->
-  <div class="paginacontainer">
-    <div class="progress-wrap">
-      <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
-      </svg>
-    </div>
-  </div>
-  <!--===== PROGRESS ENDS=======-->
-
-  <!--=====HEADER START=======-->
-  <header class="homepage1-body">
-    <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
-      <div class="container">
-        <div class="row align-items-center row-bg1">
-          <div class="col-lg-2 col-md-6 col-6">
-            <div class="vl-logo">
-              <a href="index.html">
-                <img src="assets/img/logo.png" alt="Logo" />
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-8 d-none d-lg-block">
-            <div class="vl-main-menu text-center">
-              <nav class="vl-mobile-menu-active">
-                <ul>
-                  <li class="has-dropdown">
-                    <a href="index.html">Home </a>
-                  </li>
-                  <li><a href="services.html">Services </a></li>
-                  <li><a href="about.html">About </a></li>
-                  <li><a href="resources.html">Resources </a></li>
-                  <li><a href="contact.html">Contact </a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-6 col-6">
-            <div class="vl-hero-btn d-none d-lg-block text-end">
-              <div class="hero-btn1">
-                <a href="#" class="vl-btn1">Get Started<i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-            <div class="vl-header-action-item d-block d-lg-none">
-              <button type="button" class="vl-offcanvas-toggle">
-                <i class="fa-solid fa-bars-staggered"></i>
-              </button>
-            </div>
-          </div>
+  <body>
+    <!--===== PRELOADER STARTS =======-->
+    <div class="preloader">
+      <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon">
+          <img src="assets/img/logo/preloder.png" alt="" />
         </div>
       </div>
     </div>
-  </header>
-  <!--=====HEADER END =======-->
+    <!--===== PRELOADER ENDS =======-->
 
-  <!--===== MOBILE HEADER STARTS =======-->
-  <div class="homepage1-body">
-    <div class="vl-offcanvas">
-      <div class="vl-offcanvas-wrapper">
-        <div class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90">
-          <div class="vl-offcanvas-logo">
-            <a href="index.html"><img src="assets/img/logo/logo1.png" alt="" /></a>
-          </div>
-          <div class="vl-offcanvas-close">
-            <button class="vl-offcanvas-close-toggle">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-          </div>
-        </div>
-
-        <div class="vl-offcanvas-menu d-lg-none mb-40">
-          <nav></nav>
-        </div>
-
-        <div class="space20"></div>
-        <div class="vl-offcanvas-info">
-          <h3 class="vl-offcanvas-sm-title">Contact Us</h3>
-          <div class="space20"></div>
-          <span><a href="#">
-              <i class="fa-regular fa-envelope"></i> +57 9954 6476</a></span>
-          <span><a href="#"><i class="fa-solid fa-phone"></i> hello@exdos.com</a></span>
-          <span><a href="#"><i class="fa-solid fa-location-dot"></i> Bhemeara,Kushtia</a></span>
-        </div>
-        <div class="space20"></div>
-        <div class="vl-offcanvas-social">
-          <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
-          <div class="space20"></div>
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
+    <!--===== PROGRESS STARTS=======-->
+    <div class="paginacontainer">
+      <div class="progress-wrap">
+        <svg
+          class="progress-circle svg-content"
+          width="100%"
+          height="100%"
+          viewBox="-1 -1 102 102"
+        >
+          <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
       </div>
     </div>
-    <div class="vl-offcanvas-overlay"></div>
-  </div>
-  <!--===== MOBILE HEADER STARTS =======-->
+    <!--===== PROGRESS ENDS=======-->
 
-  <!--===== HERO AREA STARTS =======-->
-
-  <div class="hero2-arrow-hero">
-    <div class="hero-main-slider">
-      <div class="hero2-slider-area">
-        <div class="img1">
-          <img src="assets/img/all-images/hero/hero-img2.png" alt="" />
-        </div>
-        <img src="assets/img/elements/elements2.png" alt="" class="elements2" />
-        <img src="assets/img/elements/elements3.png" alt="" class="elements3" />
-        <img src="assets/img/elements/elements4.png" alt="" class="elements4" />
+    <!--=====HEADER START=======-->
+    <header class="homepage1-body">
+      <div id="vl-header-sticky" class="vl-header-area vl-transparent-header">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="hero2-heading">
-                <h5>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <path
-                      d="M9.45001 17.8772C14.2115 17.6442 18 13.7338 18 8.94408C18 7.4743 17.6433 6.08732 17.0111 4.86399C14.4764 6.3183 13.2091 7.04546 12.2507 8.02546C11.1061 9.19582 10.2724 10.6308 9.82481 12.201C9.45001 13.5159 9.45001 14.9697 9.45001 17.8772Z"
-                      fill="white" />
-                    <path
-                      d="M8.55001 17.8772C3.78851 17.6442 0 13.7338 0 8.94408C0 7.47429 0.356744 6.08731 0.988876 4.86398C3.52358 6.3183 4.79093 7.04546 5.74937 8.02547C6.89397 9.19583 7.72761 10.6308 8.17521 12.2011C8.55001 13.5159 8.55001 14.9697 8.55001 17.8772Z"
-                      fill="white" />
-                    <path
-                      d="M1.43959 4.08981C3.97405 5.54399 5.24127 6.27107 6.57492 6.60594C8.16664 7.00559 9.83338 7.00559 11.4251 6.60594C12.7587 6.27108 14.026 5.54399 16.5604 4.08982C14.9571 1.62862 12.1699 0 9 0C5.8301 0 3.04295 1.62862 1.43959 4.08981Z"
-                      fill="white" />
-                  </svg>
-                  BMET Licensed & Verified
-                </h5>
-                <div class="space16"></div>
-                <h1>Building Global Careers for Bangladesh's Workforce</h1>
-                <div class="space16"></div>
-                <p>Government Approved Recruitment Agency Since 2015</p>
-                <div class="space32"></div>
-                <div class="btn-area1 d-flex align-center gap-2" data-aos="fade-left" data-aos-duration="1200">
-                  <a href="#" class="vl-btn1">Apply Now</a>
-                  <div class="space6"></div>
-                  <a href="#" class="vl-btn1 btn2">Employer Portal </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero2-slider-area">
-        <div class="img1">
-          <img src="assets/img/all-images/hero/hero-img3.png" alt="" />
-        </div>
-        <img src="assets/img/elements/elements2.png" alt="" class="elements2" />
-        <img src="assets/img/elements/elements3.png" alt="" class="elements3" />
-        <img src="assets/img/elements/elements4.png" alt="" class="elements4" />
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6">
-              <div class="hero2-heading">
-                <h5>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                    <path
-                      d="M9.45001 17.8772C14.2115 17.6442 18 13.7338 18 8.94408C18 7.4743 17.6433 6.08732 17.0111 4.86399C14.4764 6.3183 13.2091 7.04546 12.2507 8.02546C11.1061 9.19582 10.2724 10.6308 9.82481 12.201C9.45001 13.5159 9.45001 14.9697 9.45001 17.8772Z"
-                      fill="white" />
-                    <path
-                      d="M8.55001 17.8772C3.78851 17.6442 0 13.7338 0 8.94408C0 7.47429 0.356744 6.08731 0.988876 4.86398C3.52358 6.3183 4.79093 7.04546 5.74937 8.02547C6.89397 9.19583 7.72761 10.6308 8.17521 12.2011C8.55001 13.5159 8.55001 14.9697 8.55001 17.8772Z"
-                      fill="white" />
-                    <path
-                      d="M1.43959 4.08981C3.97405 5.54399 5.24127 6.27107 6.57492 6.60594C8.16664 7.00559 9.83338 7.00559 11.4251 6.60594C12.7587 6.27108 14.026 5.54399 16.5604 4.08982C14.9571 1.62862 12.1699 0 9 0C5.8301 0 3.04295 1.62862 1.43959 4.08981Z"
-                      fill="white" />
-                  </svg>
-                  Delivering Talent That Drives Success
-                </h5>
-                <div class="space16"></div>
-                <h1>
-                  Elevate Your Team Expert Staffing For Solutions Success
-                </h1>
-                <div class="space16"></div>
-                <p>
-                  With a relentless dedication to excellence specialize
-                  connecting top-tier talent with leading companies, creating
-                  synergies drive.
-                </p>
-                <div class="space32"></div>
-                <div class="btn-area1 d-flex align-center gap-2" data-aos="fade-left" data-aos-duration="1200">
-                  <a href="#" class="vl-btn1">Apply Now</a>
-                  <div class="space6"></div>
-                  <a href="#" class="vl-btn1 btn2">Employer Portal </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-arrow">
-      <div class="prev-arrow-hero">
-        <button><i class="fa-solid fa-arrow-right"></i></button>
-      </div>
-      <div class="next-arrow-hero">
-        <button><i class="fa-solid fa-arrow-left"></i></button>
-      </div>
-    </div>
-  </div>
-  <!--===== HERO AREA ENDS =======-->
-
-  <!--===== SERVICE AREA STARTS =======-->
-  <div class="service1 sp2" style="background: #fafafa">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 m-auto">
-          <div class="heading1 text-center space-margin60">
-            <div class="space16"></div>
-            <h2 class="vl-section-title" data-aos="fade-up" data-aos-duration="1000">
-              Simple Registration for Rural Workers
-            </h2>
-            <div class="space16"></div>
-            <p data-aos="fade-up" data-aos-duration="1100">
-              Three easy ways to register - choose what works best for you
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="800" data-aos-offset="100">
-          <div class="service-boxarea2">
-            <div class="content-area">
-              <a href="#" class="title">Voice Registration </a>
-              <div class="space16"></div>
-              <p>Record Your Details in Bangla</p>
-              <div class="space24"></div>
-              <div class="btn-area1">
-                <a href="#" class="vl-btn1">Start Voice Recording
-                  <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-          <div class="service-boxarea2">
-            <div class="content-area">
-              <a href="#" class="title">SMS Registration </a>
-              <div class="space16"></div>
-              <p>Send SMS to 16247</p>
-              <div class="space24"></div>
-              <div class="btn-area1">
-                <a href="#" class="vl-btn1">
-                  Send SMS <i class="fa-solid fa-arrow-right"></i>
+          <div class="row align-items-center row-bg1">
+            <div class="col-lg-2 col-md-6 col-6">
+              <div class="vl-logo">
+                <a href="index.html">
+                  <img src="assets/img/logo.png" alt="Logo" />
                 </a>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="100">
-          <div class="service-boxarea2">
-            <div class="content-area">
-              <a href="#" class="title">Family Assisted Form </a>
-              <div class="space16"></div>
-              <p>Ask a family member to help fill this form</p>
-              <div class="space24"></div>
-              <div class="btn-area1">
-                <a href="#" class="vl-btn1">Start Form <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="col-lg-8 d-none d-lg-block">
+              <div class="vl-main-menu text-center">
+                <nav class="vl-mobile-menu-active">
+                  <ul>
+                    <li class="has-dropdown">
+                      <a href="index.html">Home </a>
+                    </li>
+                    <li><a href="services.html">Services </a></li>
+                    <li><a href="about.html">About </a></li>
+                    <li><a href="resources.html">Resources </a></li>
+                    <li><a href="contact.html">Contact </a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1400">
-          <div class="service-boxarea">
-            <div class="space24"></div>
-            <div class="img1 text-center">
-              <i style="color: #fb8500; font-size: 25px" class="fa-solid fa-phone"></i>
-            </div>
-            <div class="space24"></div>
-            <div class="content-area text-center">
-              <span class="title">Need Help? Call Anytime</span>
-              <div class="space16"></div>
-              <h3>16000</h3>
-              <div class="space24"></div>
-              <p>Toll-Free • 24/7 Support</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1600">
-          <div class="service-boxarea">
-            <div class="space24"></div>
-            <div class="img1 text-center">
-              <i style="color: #fb8500; font-size: 25px" class="fa-solid fa-message"></i>
-            </div>
-            <div class="space24"></div>
-            <div class="content-area text-center">
-              <span class="title">WhatsApp Help</span>
-              <div class="space16"></div>
-              <h3>+880 1700-000000</h3>
-              <div class="space24"></div>
-              <p>Click to start WhatsApp chat</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row justify-content-center">
-        <div class="col-12">
-          <div class="service-boxarea" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="100">
-            <div class="space24"></div>
-            <div class="img1 text-center">
-              <i style="color: #fb8500; font-size: 25px" class="fa-solid fa-map-location"></i>
-            </div>
-            <div class="space24"></div>
-            <div class="content-area text-center">
-              <span class="title">Our Offices</span>
-              <div class="space16"></div>
-
-              <div class="row">
-                <div class="single col-md-6 col-lg-3">
-                  <h5>Dhaka (Head Office)</h5>
-                  <div class="space8"></div>
-                  <p>Motijheel, Dhaka-1000</p>
-                  <div class="space24"></div>
+            <div class="col-lg-2 col-md-6 col-6">
+              <div class="vl-hero-btn d-none d-lg-block text-end">
+                <div class="hero-btn1">
+                  <a href="#" class="vl-btn1"
+                    >Get Started<i class="fa-solid fa-arrow-right"></i
+                  ></a>
                 </div>
-
-                <div class="single col-md-6 col-lg-3">
-                  <h5>Sylhet</h5>
-                  <div class="space8"></div>
-                  <p>Zindabazar, Sylhet</p>
-                  <div class="space24"></div>
-                </div>
-
-                <div class="single col-md-6 col-lg-3">
-                  <h5>Chittagong</h5>
-                  <div class="space8"></div>
-                  <p>Agrabad, Chittagong</p>
-                  <div class="space24"></div>
-                </div>
-
-                <div class="single col-md-6 col-lg-3">
-                  <h5>Rajshahi</h5>
-                  <div class="space8"></div>
-                  <p>Shaheb Bazar, Rajshahi</p>
-                  <div class="space24"></div>
-                </div>
+              </div>
+              <div class="vl-header-action-item d-block d-lg-none">
+                <button type="button" class="vl-offcanvas-toggle">
+                  <i class="fa-solid fa-bars-staggered"></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </header>
+    <!--=====HEADER END =======-->
+
+    <!--===== MOBILE HEADER STARTS =======-->
+    <div class="homepage1-body">
+      <div class="vl-offcanvas">
+        <div class="vl-offcanvas-wrapper">
+          <div
+            class="vl-offcanvas-header d-flex justify-content-between align-items-center mb-90"
+          >
+            <div class="vl-offcanvas-logo">
+              <a href="index.html"
+                ><img src="assets/img/logo/logo1.png" alt=""
+              /></a>
+            </div>
+            <div class="vl-offcanvas-close">
+              <button class="vl-offcanvas-close-toggle">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="vl-offcanvas-menu d-lg-none mb-40">
+            <nav></nav>
+          </div>
+
+          <div class="space20"></div>
+          <div class="vl-offcanvas-info">
+            <h3 class="vl-offcanvas-sm-title">Contact Us</h3>
+            <div class="space20"></div>
+            <span
+              ><a href="#">
+                <i class="fa-regular fa-envelope"></i> +57 9954 6476</a
+              ></span
+            >
+            <span
+              ><a href="#"
+                ><i class="fa-solid fa-phone"></i> hello@exdos.com</a
+              ></span
+            >
+            <span
+              ><a href="#"
+                ><i class="fa-solid fa-location-dot"></i> Bhemeara,Kushtia</a
+              ></span
+            >
+          </div>
+          <div class="space20"></div>
+          <div class="vl-offcanvas-social">
+            <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
+            <div class="space20"></div>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="vl-offcanvas-overlay"></div>
     </div>
-  </div>
-  <!--===== SERVICE AREA ENDS =======-->
+    <!--===== MOBILE HEADER STARTS =======-->
 
-  <!--===== BLOG AREA STARTS =======-->
-  <div class="vl-blog-1-area sp2">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 m-auto">
-          <div class="vl-blog-1-section-box heading1 text-center space-margin60">
-            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">
-              Success Stories from Our Navira Family
-            </h2>
-            <div class="space16"></div>
-            <p data-aos="zoom-in" data-aos-duration="1100">
-              Real stories from real workers who transformed their lives
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="900">
-          <div class="vl-blog-1-item">
-            <div class="vl-blog-1-thumb image-anime" style="position: relative">
-              <a href="https://www.youtube.com/watch?v=ilB8Pbtcfxo" target="_blank" class="vidoe-icon">
-                <i class="fa-solid fa-play"></i>
-              </a>
-              <img src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/classroomimage1/1756640595/03.jpg"
-                alt="" />
-            </div>
-            <div class="vl-blog-1-content">
-              <div class="vl-blog-meta">
-                <ul class="d-flex flex-column gap-1">
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-location-pin"></i>
-                      Saudi Arabia</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-suitcase"></i> Construction
-                      Worker</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-calendar-check"></i> 3 Years
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="space16"></div>
-              <h4 class="vl-blog-1-title">
-                <a href="#">Md. Rahman Ahmed</a>
-              </h4>
-              <div class="space8"></div>
-              <p>
-                "Navira changed my life. Now I support my entire family back
-                in my village."
-              </p>
-              <div class="space24"></div>
-            </div>
-          </div>
-        </div>
+    <!--===== HERO AREA STARTS =======-->
 
-        <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="900">
-          <div class="vl-blog-1-item">
-            <div class="vl-blog-1-thumb image-anime" style="position: relative">
-              <a href="https://www.facebook.com/reel/623836730267101" target="_blank" class="vidoe-icon">
-                <i class="fa-solid fa-play"></i>
-              </a>
-              <img src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/seminarimage1/1756640595/01.jpg"
-                alt="" />
-            </div>
-            <div class="vl-blog-1-content">
-              <div class="vl-blog-meta">
-                <ul class="d-flex flex-column gap-1">
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-location-pin"></i>
-                      Malaysia</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-suitcase"></i> Healthcare Worker
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-calendar-check"></i> 2 Years
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="space16"></div>
-              <h4 class="vl-blog-1-title"><a href="#">Fatima Khatun</a></h4>
-              <div class="space8"></div>
-              <p>
-                "The training program prepared me perfectly. Zero hidden fees,
-                everything transparent."
-              </p>
-              <div class="space24"></div>
-            </div>
+    <div class="hero2-arrow-hero">
+      <div class="hero-main-slider">
+        <div class="hero2-slider-area">
+          <div class="img1">
+            <img src="assets/img/all-images/hero/hero-img2.png" alt="" />
           </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="900">
-          <div class="vl-blog-1-item">
-            <div class="vl-blog-1-thumb image-anime" style="position: relative">
-              <a href="https://www.youtube.com/watch?v=ilB8Pbtcfxo" target="_blank" class="vidoe-icon">
-                <i class="fa-solid fa-play"></i>
-              </a>
-              <img src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/classroomimage2/1756640595/10.jpg"
-                alt="" />
-            </div>
-            <div class="vl-blog-1-content">
-              <div class="vl-blog-meta">
-                <ul class="d-flex flex-column gap-1">
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-location-pin"></i>
-                      UAE
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-suitcase"></i> Technician
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-calendar-check"></i> 4 Years
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="space16"></div>
-              <h4 class="vl-blog-1-title"><a href="#">Abdul Karim </a></h4>
-              <div class="space8"></div>
-              <p>
-                "Best decision of my life. Navira supported me every step of
-                the way."
-              </p>
-              <div class="space24"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="900">
-          <div class="vl-blog-1-item">
-            <div class="vl-blog-1-thumb image-anime" style="position: relative">
-              <a href="https://www.youtube.com/shorts/P7hwUvMaz8U" class="vidoe-icon">
-                <i class="fa-solid fa-play"></i>
-              </a>
-              <img src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/seminarimage3/1756640595/02.jpg"
-                alt="" />
-            </div>
-            <div class="vl-blog-1-content">
-              <div class="vl-blog-meta">
-                <ul class="d-flex flex-column gap-1">
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-location-pin"></i>
-                      Singapore
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-suitcase"></i> Garment Technician
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-calendar-check"></i> 3 Years
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="space16"></div>
-              <h4 class="vl-blog-1-title"><a href="#">Salma Begum </a></h4>
-              <div class="space8"></div>
-              <p>
-                "From my village to Singapore - thanks to Navira's honest
-                service."
-              </p>
-              <div class="space24"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="900">
-          <div class="vl-blog-1-item">
-            <div class="vl-blog-1-thumb image-anime" style="position: relative">
-              <a href="https://www.youtube.com/shorts/kvr5qtEcuoM" class="vidoe-icon">
-                <i class="fa-solid fa-play"></i>
-              </a>
-              <img src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/classroomimage3/1756640595/11jpg.jpg"
-                alt="" />
-            </div>
-            <div class="vl-blog-1-content">
-              <div class="vl-blog-meta">
-                <ul class="d-flex flex-column gap-1">
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-location-pin"></i>
-                      Qatar
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-suitcase"></i> Hospitality Staff
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-calendar-check"></i> 2 Years
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="space16"></div>
-              <h4 class="vl-blog-1-title"><a href="#">Jahangir Alam </a></h4>
-              <div class="space8"></div>
-              <p>
-                "Excellent support even after placement. They truly care about
-                workers."
-              </p>
-              <div class="space24"></div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-right" data-aos-duration="900">
-          <div class="vl-blog-1-item">
-            <div class="vl-blog-1-thumb image-anime" style="position: relative">
-              <a href="https://www.facebook.com/reel/623836730267101" class="vidoe-icon">
-                <i class="fa-solid fa-play"></i>
-              </a>
-              <img src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/eventimage1/1756640595/01.png"
-                alt="" />
-            </div>
-            <div class="vl-blog-1-content">
-              <div class="vl-blog-meta">
-                <ul class="d-flex flex-column gap-1">
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-location-pin"></i>
-                      Oman
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-suitcase"></i> Agricultural Worker
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="fa-solid fa-calendar-check"></i> 2 Years
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="space16"></div>
-              <h4 class="vl-blog-1-title">
-                <a href="#">Ayesha Siddique </a>
-              </h4>
-              <div class="space8"></div>
-              <p>
-                "I recommend Navira to everyone in my village. Honest and
-                reliable."
-              </p>
-              <div class="space24"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--===== BLOG AREA ENDS =======-->
-
-  <!--===== CTA AREA STARTS =======-->
-  <div class="cta1-aection-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="cta-bg-area">
-            <div class="row align-items-center">
-              <div class="col-lg-5" data-aos="zoom-in" data-aos-duration="1000">
-                <div class="cta-images-area">
-                  <img src="assets/img/all-images/cta/cta-img1.png" alt="" />
-                </div>
-              </div>
-              <div class="col-lg-1"></div>
+          <img
+            src="assets/img/elements/elements2.png"
+            alt=""
+            class="elements2"
+          />
+          <img
+            src="assets/img/elements/elements3.png"
+            alt=""
+            class="elements3"
+          />
+          <img
+            src="assets/img/elements/elements4.png"
+            alt=""
+            class="elements4"
+          />
+          <div class="container">
+            <div class="row">
               <div class="col-lg-6">
-                <div class="cta-heading">
-                  <h2 data-aos="zoom-in" data-aos-duration="800">
-                    These could be your success stories too!
-                  </h2>
+                <div class="hero2-heading">
+                  <h5>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.45001 17.8772C14.2115 17.6442 18 13.7338 18 8.94408C18 7.4743 17.6433 6.08732 17.0111 4.86399C14.4764 6.3183 13.2091 7.04546 12.2507 8.02546C11.1061 9.19582 10.2724 10.6308 9.82481 12.201C9.45001 13.5159 9.45001 14.9697 9.45001 17.8772Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M8.55001 17.8772C3.78851 17.6442 0 13.7338 0 8.94408C0 7.47429 0.356744 6.08731 0.988876 4.86398C3.52358 6.3183 4.79093 7.04546 5.74937 8.02547C6.89397 9.19583 7.72761 10.6308 8.17521 12.2011C8.55001 13.5159 8.55001 14.9697 8.55001 17.8772Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M1.43959 4.08981C3.97405 5.54399 5.24127 6.27107 6.57492 6.60594C8.16664 7.00559 9.83338 7.00559 11.4251 6.60594C12.7587 6.27108 14.026 5.54399 16.5604 4.08982C14.9571 1.62862 12.1699 0 9 0C5.8301 0 3.04295 1.62862 1.43959 4.08981Z"
+                        fill="white"
+                      />
+                    </svg>
+                    BMET Licensed & Verified
+                  </h5>
                   <div class="space16"></div>
-                  <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
-                    <a href="#" class="vl-btn7"><span class="text">Apply Now - Free Consultation</span><span
-                        class="arrow"><i class="fa-solid fa-arrow-right"></i></span></a>
+                  <h1>Building Global Careers for Bangladesh's Workforce</h1>
+                  <div class="space16"></div>
+                  <p>Government Approved Recruitment Agency Since 2015</p>
+                  <div class="space32"></div>
+                  <div
+                    class="btn-area1 d-flex align-center gap-2"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <a href="#" class="vl-btn1">Apply Now</a>
+                    <div class="space6"></div>
+                    <a href="#" class="vl-btn1 btn2">Employer Portal </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero2-slider-area">
+          <div class="img1">
+            <img src="assets/img/all-images/hero/hero-img3.png" alt="" />
+          </div>
+          <img
+            src="assets/img/elements/elements2.png"
+            alt=""
+            class="elements2"
+          />
+          <img
+            src="assets/img/elements/elements3.png"
+            alt=""
+            class="elements3"
+          />
+          <img
+            src="assets/img/elements/elements4.png"
+            alt=""
+            class="elements4"
+          />
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="hero2-heading">
+                  <h5>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                    >
+                      <path
+                        d="M9.45001 17.8772C14.2115 17.6442 18 13.7338 18 8.94408C18 7.4743 17.6433 6.08732 17.0111 4.86399C14.4764 6.3183 13.2091 7.04546 12.2507 8.02546C11.1061 9.19582 10.2724 10.6308 9.82481 12.201C9.45001 13.5159 9.45001 14.9697 9.45001 17.8772Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M8.55001 17.8772C3.78851 17.6442 0 13.7338 0 8.94408C0 7.47429 0.356744 6.08731 0.988876 4.86398C3.52358 6.3183 4.79093 7.04546 5.74937 8.02547C6.89397 9.19583 7.72761 10.6308 8.17521 12.2011C8.55001 13.5159 8.55001 14.9697 8.55001 17.8772Z"
+                        fill="white"
+                      />
+                      <path
+                        d="M1.43959 4.08981C3.97405 5.54399 5.24127 6.27107 6.57492 6.60594C8.16664 7.00559 9.83338 7.00559 11.4251 6.60594C12.7587 6.27108 14.026 5.54399 16.5604 4.08982C14.9571 1.62862 12.1699 0 9 0C5.8301 0 3.04295 1.62862 1.43959 4.08981Z"
+                        fill="white"
+                      />
+                    </svg>
+                    Delivering Talent That Drives Success
+                  </h5>
+                  <div class="space16"></div>
+                  <h1>
+                    Elevate Your Team Expert Staffing For Solutions Success
+                  </h1>
+                  <div class="space16"></div>
+                  <p>
+                    With a relentless dedication to excellence specialize
+                    connecting top-tier talent with leading companies, creating
+                    synergies drive.
+                  </p>
+                  <div class="space32"></div>
+                  <div
+                    class="btn-area1 d-flex align-center gap-2"
+                    data-aos="fade-left"
+                    data-aos-duration="1200"
+                  >
+                    <a href="#" class="vl-btn1">Apply Now</a>
+                    <div class="space6"></div>
+                    <a href="#" class="vl-btn1 btn2">Employer Portal </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-arrow">
+        <div class="prev-arrow-hero">
+          <button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="next-arrow-hero">
+          <button><i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+      </div>
+    </div>
+    <!--===== HERO AREA ENDS =======-->
+
+    <!--===== SERVICE AREA STARTS =======-->
+    <div class="service1 sp2" style="background: #fafafa">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 m-auto">
+            <div class="heading1 text-center space-margin60">
+              <div class="space16"></div>
+              <h2
+                class="vl-section-title"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
+                Simple Registration for Rural Workers
+              </h2>
+              <div class="space16"></div>
+              <p data-aos="fade-up" data-aos-duration="1100">
+                Three easy ways to register - choose what works best for you
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-lg-4"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-offset="100"
+          >
+            <div class="service-boxarea2">
+              <div class="content-area">
+                <a href="#" class="title">Voice Registration </a>
+                <div class="space16"></div>
+                <p>Record Your Details in Bangla</p>
+                <div class="space24"></div>
+                <div class="btn-area1">
+                  <a href="#" class="vl-btn1"
+                    >Start Voice Recording
+                    <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-offset="100"
+          >
+            <div class="service-boxarea2">
+              <div class="content-area">
+                <a href="#" class="title">SMS Registration </a>
+                <div class="space16"></div>
+                <p>Send SMS to 16247</p>
+                <div class="space24"></div>
+                <div class="btn-area1">
+                  <a href="#" class="vl-btn1">
+                    Send SMS <i class="fa-solid fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+            data-aos-offset="100"
+          >
+            <div class="service-boxarea2">
+              <div class="content-area">
+                <a href="#" class="title">Family Assisted Form </a>
+                <div class="space16"></div>
+                <p>Ask a family member to help fill this form</p>
+                <div class="space24"></div>
+                <div class="btn-area1">
+                  <a href="#" class="vl-btn1"
+                    >Start Form <i class="fa-solid fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1400">
+            <div class="service-boxarea">
+              <div class="space24"></div>
+              <div class="img1 text-center">
+                <i
+                  style="color: #fb8500; font-size: 25px"
+                  class="fa-solid fa-phone"
+                ></i>
+              </div>
+              <div class="space24"></div>
+              <div class="content-area text-center">
+                <span class="title">Need Help? Call Anytime</span>
+                <div class="space16"></div>
+                <h3>16000</h3>
+                <div class="space24"></div>
+                <p>Toll-Free • 24/7 Support</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1600">
+            <div class="service-boxarea">
+              <div class="space24"></div>
+              <div class="img1 text-center">
+                <i
+                  style="color: #fb8500; font-size: 25px"
+                  class="fa-solid fa-message"
+                ></i>
+              </div>
+              <div class="space24"></div>
+              <div class="content-area text-center">
+                <span class="title">WhatsApp Help</span>
+                <div class="space16"></div>
+                <h3>+880 1700-000000</h3>
+                <div class="space24"></div>
+                <p>Click to start WhatsApp chat</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-12">
+            <div
+              class="service-boxarea"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-offset="100"
+            >
+              <div class="space24"></div>
+              <div class="img1 text-center">
+                <i
+                  style="color: #fb8500; font-size: 25px"
+                  class="fa-solid fa-map-location"
+                ></i>
+              </div>
+              <div class="space24"></div>
+              <div class="content-area text-center">
+                <span class="title">Our Offices</span>
+                <div class="space16"></div>
+
+                <div class="row">
+                  <div class="single col-md-6 col-lg-3">
+                    <h5>Dhaka (Head Office)</h5>
+                    <div class="space8"></div>
+                    <p>Motijheel, Dhaka-1000</p>
+                    <div class="space24"></div>
+                  </div>
+
+                  <div class="single col-md-6 col-lg-3">
+                    <h5>Sylhet</h5>
+                    <div class="space8"></div>
+                    <p>Zindabazar, Sylhet</p>
+                    <div class="space24"></div>
+                  </div>
+
+                  <div class="single col-md-6 col-lg-3">
+                    <h5>Chittagong</h5>
+                    <div class="space8"></div>
+                    <p>Agrabad, Chittagong</p>
+                    <div class="space24"></div>
+                  </div>
+
+                  <div class="single col-md-6 col-lg-3">
+                    <h5>Rajshahi</h5>
+                    <div class="space8"></div>
+                    <p>Shaheb Bazar, Rajshahi</p>
+                    <div class="space24"></div>
                   </div>
                 </div>
               </div>
@@ -682,119 +487,631 @@
         </div>
       </div>
     </div>
-  </div>
-  <!--===== CTA AREA ENDS =======-->
+    <!--===== SERVICE AREA ENDS =======-->
 
-  <!--===== BENEFIT AREA STARTS =======-->
-  <div class="benefit1 sp1" style="
+    <!--===== BLOG AREA STARTS =======-->
+    <div class="vl-blog-1-area sp2">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 m-auto">
+            <div
+              class="vl-blog-1-section-box heading1 text-center space-margin60"
+            >
+              <h2
+                class="vl-section-title"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                Success Stories from Our Navira Family
+              </h2>
+              <div class="space16"></div>
+              <p data-aos="zoom-in" data-aos-duration="1100">
+                Real stories from real workers who transformed their lives
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="900"
+          >
+            <div class="vl-blog-1-item">
+              <div
+                class="vl-blog-1-thumb image-anime"
+                style="position: relative"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=ilB8Pbtcfxo"
+                  target="_blank"
+                  class="vidoe-icon"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+                <img
+                  src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/classroomimage1/1756640595/03.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="vl-blog-1-content">
+                <div class="vl-blog-meta">
+                  <ul class="d-flex flex-column gap-1">
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-location-pin"></i>
+                        Saudi Arabia</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-suitcase"></i> Construction
+                        Worker</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-calendar-check"></i> 3 Years
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="space16"></div>
+                <h4 class="vl-blog-1-title">
+                  <a href="#">Md. Rahman Ahmed</a>
+                </h4>
+                <div class="space8"></div>
+                <p>
+                  "Navira changed my life. Now I support my entire family back
+                  in my village."
+                </p>
+                <div class="space24"></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="900"
+          >
+            <div class="vl-blog-1-item">
+              <div
+                class="vl-blog-1-thumb image-anime"
+                style="position: relative"
+              >
+                <a
+                  href="https://www.facebook.com/reel/623836730267101"
+                  target="_blank"
+                  class="vidoe-icon"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+                <img
+                  src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/seminarimage1/1756640595/01.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="vl-blog-1-content">
+                <div class="vl-blog-meta">
+                  <ul class="d-flex flex-column gap-1">
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-location-pin"></i>
+                        Malaysia</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-suitcase"></i> Healthcare Worker
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-calendar-check"></i> 2 Years
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="space16"></div>
+                <h4 class="vl-blog-1-title"><a href="#">Fatima Khatun</a></h4>
+                <div class="space8"></div>
+                <p>
+                  "The training program prepared me perfectly. Zero hidden fees,
+                  everything transparent."
+                </p>
+                <div class="space24"></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="900"
+          >
+            <div class="vl-blog-1-item">
+              <div
+                class="vl-blog-1-thumb image-anime"
+                style="position: relative"
+              >
+                <a
+                  href="https://www.youtube.com/watch?v=ilB8Pbtcfxo"
+                  target="_blank"
+                  class="vidoe-icon"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+                <img
+                  src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/classroomimage2/1756640595/10.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="vl-blog-1-content">
+                <div class="vl-blog-meta">
+                  <ul class="d-flex flex-column gap-1">
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-location-pin"></i>
+                        UAE
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-suitcase"></i> Technician
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-calendar-check"></i> 4 Years
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="space16"></div>
+                <h4 class="vl-blog-1-title"><a href="#">Abdul Karim </a></h4>
+                <div class="space8"></div>
+                <p>
+                  "Best decision of my life. Navira supported me every step of
+                  the way."
+                </p>
+                <div class="space24"></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="900"
+          >
+            <div class="vl-blog-1-item">
+              <div
+                class="vl-blog-1-thumb image-anime"
+                style="position: relative"
+              >
+                <a
+                  href="https://www.youtube.com/shorts/P7hwUvMaz8U"
+                  class="vidoe-icon"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+                <img
+                  src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/seminarimage3/1756640595/02.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="vl-blog-1-content">
+                <div class="vl-blog-meta">
+                  <ul class="d-flex flex-column gap-1">
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-location-pin"></i>
+                        Singapore
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-suitcase"></i> Garment Technician
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-calendar-check"></i> 3 Years
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="space16"></div>
+                <h4 class="vl-blog-1-title"><a href="#">Salma Begum </a></h4>
+                <div class="space8"></div>
+                <p>
+                  "From my village to Singapore - thanks to Navira's honest
+                  service."
+                </p>
+                <div class="space24"></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="900"
+          >
+            <div class="vl-blog-1-item">
+              <div
+                class="vl-blog-1-thumb image-anime"
+                style="position: relative"
+              >
+                <a
+                  href="https://www.youtube.com/shorts/kvr5qtEcuoM"
+                  class="vidoe-icon"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+                <img
+                  src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/classroomimage3/1756640595/11jpg.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="vl-blog-1-content">
+                <div class="vl-blog-meta">
+                  <ul class="d-flex flex-column gap-1">
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-location-pin"></i>
+                        Qatar
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-suitcase"></i> Hospitality Staff
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-calendar-check"></i> 2 Years
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="space16"></div>
+                <h4 class="vl-blog-1-title"><a href="#">Jahangir Alam </a></h4>
+                <div class="space8"></div>
+                <p>
+                  "Excellent support even after placement. They truly care about
+                  workers."
+                </p>
+                <div class="space24"></div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-right"
+            data-aos-duration="900"
+          >
+            <div class="vl-blog-1-item">
+              <div
+                class="vl-blog-1-thumb image-anime"
+                style="position: relative"
+              >
+                <a
+                  href="https://www.facebook.com/reel/623836730267101"
+                  class="vidoe-icon"
+                >
+                  <i class="fa-solid fa-play"></i>
+                </a>
+                <img
+                  src="https://uniqueeastern.com/pluginfile.php/1/theme_klassroom/eventimage1/1756640595/01.png"
+                  alt=""
+                />
+              </div>
+              <div class="vl-blog-1-content">
+                <div class="vl-blog-meta">
+                  <ul class="d-flex flex-column gap-1">
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-location-pin"></i>
+                        Oman
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-suitcase"></i> Agricultural Worker
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="fa-solid fa-calendar-check"></i> 2 Years
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="space16"></div>
+                <h4 class="vl-blog-1-title">
+                  <a href="#">Ayesha Siddique </a>
+                </h4>
+                <div class="space8"></div>
+                <p>
+                  "I recommend Navira to everyone in my village. Honest and
+                  reliable."
+                </p>
+                <div class="space24"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===== BLOG AREA ENDS =======-->
+
+    <!--===== CTA AREA STARTS =======-->
+    <div class="cta1-aection-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="cta-bg-area">
+              <div class="row align-items-center">
+                <div
+                  class="col-lg-5"
+                  data-aos="zoom-in"
+                  data-aos-duration="1000"
+                >
+                  <div class="cta-images-area">
+                    <img src="assets/img/all-images/cta/cta-img1.png" alt="" />
+                  </div>
+                </div>
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6">
+                  <div class="cta-heading">
+                    <h2 data-aos="zoom-in" data-aos-duration="800">
+                      These could be your success stories too!
+                    </h2>
+                    <div class="space16"></div>
+                    <div
+                      class="btn-area1"
+                      data-aos="fade-left"
+                      data-aos-duration="1200"
+                    >
+                      <a href="#" class="vl-btn7"
+                        ><span class="text">Apply Now - Free Consultation</span
+                        ><span class="arrow"
+                          ><i class="fa-solid fa-arrow-right"></i></span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===== CTA AREA ENDS =======-->
+
+    <!--===== BENEFIT AREA STARTS =======-->
+    <div
+      class="benefit1 sp1"
+      style="
         background-image: url(assets/img/all-images/bg/section-bg1.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         margin-top: 40px;
-      ">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 m-auto">
-          <div class="heading1 text-center space-margin60">
-            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">
-              Your Trusted Partner for International Employment
-            </h2>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="benefit-boxes-area">
-            <ul class="nav nav-pills" id="pills-tab" role="tablist">
-              <li class="nav-item" role="presentation" data-aos="fade-left" data-aos-duration="800">
-                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-                  <span class="button-content">
-                    <span class="icons">
-                      <i style="color: #000; font-size: 22px" class="fa-solid fa-dollar"></i>
-                    </span>
-                    <span class="text">
-                      <span class="title">Zero Cost Migration</span>
-                      <span class="pera">Employer-funded model. Salary starts day one.
-                        Money-back guarantee within 6 months.</span>
-                    </span>
-                  </span>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation" data-aos="fade-left" data-aos-duration="900">
-                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
-                  <span class="button-content">
-                    <span class="icons">
-                      <i style="color: #000; font-size: 22px" class="fa-solid fa-graduation-cap"></i>
-                    </span>
-                    <span class="text">
-                      <span class="title">Skill Development</span>
-                      <span class="pera">3-week training: workplace safety, language, cultural
-                        orientation, mock interviews. 100% placement success
-                        rate.</span>
-                    </span>
-                  </span>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation" data-aos="fade-left" data-aos-duration="1000">
-                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
-                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
-                  <span class="button-content">
-                    <span class="icons"><img src="assets/img/icons/bene-icons2.svg" alt="" /></span>
-                    <span class="text">
-                      <span class="title">Government Approved</span>
-                      <span class="pera">Licensed by Bangladesh Ministry. RBA standards, zero
-                        forced labor, transparent fees.</span>
-                    </span>
-                  </span>
-                </button>
-              </li>
-              <li class="nav-item" role="presentation" data-aos="fade-left" data-aos-duration="1100">
-                <button class="nav-link" id="pills-contact1-tab" data-bs-toggle="pill" data-bs-target="#pills-contact1"
-                  type="button" role="tab" aria-controls="pills-contact1" aria-selected="false">
-                  <span class="button-content">
-                    <span class="icons"><img src="assets/img/icons/bene-icons1.svg" alt="" /></span>
-                    <span class="text">
-                      <span class="title">24/7 Global Support</span>
-                      <span class="pera">Country coordinator (Bangla-speaking). Emergency
-                        support in Malaysia, Saudi, UAE, Singapore, Oman,
-                        Qatar.</span>
-                    </span>
-                  </span>
-                </button>
-              </li>
-            </ul>
+      "
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 m-auto">
+            <div class="heading1 text-center space-margin60">
+              <h2
+                class="vl-section-title"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                Your Trusted Partner for International Employment
+              </h2>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-6">
-          <div class="benefit-images-area">
-            <div class="tab-content" id="pills-tabContent">
-              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
-                tabindex="0">
-                <div class="images">
-                  <img src="assets/img/all-images/benefit/benefit-img1.png" alt="" />
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="benefit-boxes-area">
+              <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                <li
+                  class="nav-item"
+                  role="presentation"
+                  data-aos="fade-left"
+                  data-aos-duration="800"
+                >
+                  <button
+                    class="nav-link active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    <span class="button-content">
+                      <span class="icons">
+                        <i
+                          style="color: #000; font-size: 22px"
+                          class="fa-solid fa-dollar"
+                        ></i>
+                      </span>
+                      <span class="text">
+                        <span class="title">Zero Cost Migration</span>
+                        <span class="pera"
+                          >Employer-funded model. Salary starts day one.
+                          Money-back guarantee within 6 months.</span
+                        >
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  class="nav-item"
+                  role="presentation"
+                  data-aos="fade-left"
+                  data-aos-duration="900"
+                >
+                  <button
+                    class="nav-link"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    <span class="button-content">
+                      <span class="icons">
+                        <i
+                          style="color: #000; font-size: 22px"
+                          class="fa-solid fa-graduation-cap"
+                        ></i>
+                      </span>
+                      <span class="text">
+                        <span class="title">Skill Development</span>
+                        <span class="pera"
+                          >3-week training: workplace safety, language, cultural
+                          orientation, mock interviews. 100% placement success
+                          rate.</span
+                        >
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  class="nav-item"
+                  role="presentation"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                >
+                  <button
+                    class="nav-link"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    <span class="button-content">
+                      <span class="icons"
+                        ><img src="assets/img/icons/bene-icons2.svg" alt=""
+                      /></span>
+                      <span class="text">
+                        <span class="title">Government Approved</span>
+                        <span class="pera"
+                          >Licensed by Bangladesh Ministry. RBA standards, zero
+                          forced labor, transparent fees.</span
+                        >
+                      </span>
+                    </span>
+                  </button>
+                </li>
+                <li
+                  class="nav-item"
+                  role="presentation"
+                  data-aos="fade-left"
+                  data-aos-duration="1100"
+                >
+                  <button
+                    class="nav-link"
+                    id="pills-contact1-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact1"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact1"
+                    aria-selected="false"
+                  >
+                    <span class="button-content">
+                      <span class="icons"
+                        ><img src="assets/img/icons/bene-icons1.svg" alt=""
+                      /></span>
+                      <span class="text">
+                        <span class="title">24/7 Global Support</span>
+                        <span class="pera"
+                          >Country coordinator (Bangla-speaking). Emergency
+                          support in Malaysia, Saudi, UAE, Singapore, Oman,
+                          Qatar.</span
+                        >
+                      </span>
+                    </span>
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="benefit-images-area">
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <div class="images">
+                    <img
+                      src="assets/img/all-images/benefit/benefit-img1.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                tabindex="0">
-                <div class="images">
-                  <img src="assets/img/all-images/benefit/benefit-img1.png" alt="" />
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  <div class="images">
+                    <img
+                      src="assets/img/all-images/benefit/benefit-img1.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                tabindex="0">
-                <div class="images">
-                  <img src="assets/img/all-images/benefit/benefit-img1.png" alt="" />
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
+                  tabindex="0"
+                >
+                  <div class="images">
+                    <img
+                      src="assets/img/all-images/benefit/benefit-img1.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
-              </div>
-              <div class="tab-pane fade" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact1-tab"
-                tabindex="0">
-                <div class="images">
-                  <img src="assets/img/all-images/benefit/benefit-img1.png" alt="" />
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact1"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact1-tab"
+                  tabindex="0"
+                >
+                  <div class="images">
+                    <img
+                      src="assets/img/all-images/benefit/benefit-img1.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -802,993 +1119,1222 @@
         </div>
       </div>
     </div>
-  </div>
-  <!--===== BENEFIT AREA ENDS =======-->
+    <!--===== BENEFIT AREA ENDS =======-->
 
-  <!-- gallery-area start  -->
-  <div class="gallery-area sp2 pb-0">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 m-auto">
-          <div class="heading1 text-center space-margin60">
-            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">
-              Explore Job Opportunities Abroad
-            </h2>
-            <div class="space16"></div>
-            <p data-aos="zoom-in" data-aos-duration="1100">
-              Discover a wide range of job openings across various sectors and
-              countries. Your dream job awaits!
+    <!-- gallery-area start  -->
+    <div class="gallery-area sp2 pb-0">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 m-auto">
+            <div class="heading1 text-center space-margin60">
+              <h2
+                class="vl-section-title"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                Explore Job Opportunities Abroad
+              </h2>
+              <div class="space16"></div>
+              <p data-aos="zoom-in" data-aos-duration="1100">
+                Discover a wide range of job openings across various sectors and
+                countries. Your dream job awaits!
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-tabs" data-aos="fade-up">
+          <button class="tab-btn active" data-filter="all">All</button>
+          <button class="tab-btn" data-filter="europe">Europe</button>
+          <button class="tab-btn" data-filter="asia">Asia</button>
+          <button class="tab-btn" data-filter="middle-east">Middle East</button>
+        </div>
+
+        <!-- Masonry Grid -->
+        <div class="gallery-grid">
+          <div class="gallery-item europe">
+            <img src="assets/img/all-images/case/case-img1.png" alt="Job" />
+            <div class="overlay">Germany Jobs</div>
+          </div>
+
+          <div class="gallery-item asia">
+            <img src="assets/img/all-images/case/case-img2.png" alt="Job" />
+            <div class="overlay">Japan Jobs</div>
+          </div>
+
+          <div class="gallery-item middle-east">
+            <img src="assets/img/all-images/case/case-img3.png" alt="Job" />
+            <div class="overlay">UAE Jobs</div>
+          </div>
+
+          <div class="gallery-item europe">
+            <img src="assets/img/all-images/case/case-img4.png" alt="Job" />
+            <div class="overlay">Italy Jobs</div>
+          </div>
+
+          <div class="gallery-item asia">
+            <img src="assets/img/all-images/case/case-img2.png" alt="Job" />
+            <div class="overlay">Malaysia Jobs</div>
+          </div>
+          <div class="gallery-item europe">
+            <img src="assets/img/all-images/case/case-img1.png" alt="Job" />
+            <div class="overlay">Germany Jobs</div>
+          </div>
+
+          <div class="gallery-item asia">
+            <img src="assets/img/all-images/case/case-img2.png" alt="Job" />
+            <div class="overlay">Japan Jobs</div>
+          </div>
+
+          <div class="gallery-item middle-east">
+            <img src="assets/img/all-images/case/case-img3.png" alt="Job" />
+            <div class="overlay">UAE Jobs</div>
+          </div>
+
+          <div class="gallery-item europe">
+            <img src="assets/img/all-images/case/case-img4.png" alt="Job" />
+            <div class="overlay">Italy Jobs</div>
+          </div>
+
+          <div class="gallery-item asia">
+            <img src="assets/img/all-images/case/case-img3.png" alt="Job" />
+            <div class="overlay">Malaysia Jobs</div>
+          </div>
+          <div class="gallery-item europe">
+            <img src="assets/img/all-images/case/case-img1.png" alt="Job" />
+            <div class="overlay">Germany Jobs</div>
+          </div>
+
+          <div class="gallery-item middle-east">
+            <img src="assets/img/all-images/case/case-img3.png" alt="Job" />
+            <div class="overlay">UAE Jobs</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- gallery-area end  -->
+
+    <!--===== WORK AREA STARTS =======-->
+    <div class="work1 sp1">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 m-auto">
+            <div class="heading1 text-center space-margin60">
+              <h2
+                class="vl-section-title"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                Our International Recruitment Services
+              </h2>
+              <div class="space16"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" style="row-gap: 30px">
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="job-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-offset="100"
+            >
+              <div class="card-body">
+                <div class="header-icon-wrap">
+                  <i class="fa-solid fa-helmet-safety"></i>
+                </div>
+
+                <h2 class="card-title">Construction & Infrastructure</h2>
+
+                <div class="details-list">
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Target Countries</span>
+                      <p class="detail-value">UAE, Saudi Arabia, Qatar</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Salary Range</span>
+                      <p class="detail-value">$400-800/month</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Required Documents</span>
+                      <p class="detail-value">
+                        Passport, Medical, Police Clearance
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="btn btn-custom-outline">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="job-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-offset="100"
+            >
+              <div class="card-body">
+                <div class="header-icon-wrap">
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+
+                <h2 class="card-title">Healthcare Support Staff</h2>
+
+                <div class="details-list">
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Target Countries</span>
+                      <p class="detail-value">Malaysia, Singapore, UK</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Salary Range</span>
+                      <p class="detail-value">$600-1200/month</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Required Documents</span>
+                      <p class="detail-value">
+                        Passport, Medical, Police Clearance
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="btn btn-custom-outline">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mx-auto">
+            <div
+              class="job-card"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+              data-aos-offset="100"
+            >
+              <div class="card-body">
+                <div class="header-icon-wrap">
+                  <i class="fa-solid fa-shirt"></i>
+                </div>
+
+                <h2 class="card-title">Garment & Textile Experts</h2>
+
+                <div class="details-list">
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Target Countries</span>
+                      <p class="detail-value">Turkey, Jordan, Vietnam</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Salary Range</span>
+                      <p class="detail-value">$350-700/month</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Required Documents</span>
+                      <p class="detail-value">
+                        Passport, Medical, Police Clearance
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="btn btn-custom-outline">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mx-auto">
+            <div
+              class="job-card"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+              data-aos-offset="100"
+            >
+              <div class="card-body">
+                <div class="header-icon-wrap">
+                  <i class="fa-solid fa-shirt"></i>
+                </div>
+
+                <h2 class="card-title">Agriculture & Poultry</h2>
+
+                <div class="details-list">
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Target Countries</span>
+                      <p class="detail-value">Australia, Canada, Oman</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Salary Range</span>
+                      <p class="detail-value">$500-900/month</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Required Documents</span>
+                      <p class="detail-value">
+                        Passport, Medical, Police Clearance
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="btn btn-custom-outline">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mx-auto">
+            <div
+              class="job-card"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+              data-aos-offset="100"
+            >
+              <div class="card-body">
+                <div class="header-icon-wrap">
+                  <i class="fa-solid fa-shirt"></i>
+                </div>
+
+                <h2 class="card-title">Food Service & Hospitality</h2>
+
+                <div class="details-list">
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Target Countries</span>
+                      <p class="detail-value">UAE, Maldives, Thailand</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Salary Range</span>
+                      <p class="detail-value">$450-850/month</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Required Documents</span>
+                      <p class="detail-value">
+                        Passport, Medical, Police Clearance
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="btn btn-custom-outline">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mx-auto">
+            <div
+              class="job-card"
+              data-aos="fade-up"
+              data-aos-duration="1600"
+              data-aos-offset="100"
+            >
+              <div class="card-body">
+                <div class="header-icon-wrap">
+                  <i class="fa-solid fa-shirt"></i>
+                </div>
+
+                <h2 class="card-title">Skilled Technicians</h2>
+
+                <div class="details-list">
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Target Countries</span>
+                      <p class="detail-value">Saudi Arabia, Kuwait, Japan</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-dollar-sign"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Salary Range</span>
+                      <p class="detail-value">$600-1500/month</p>
+                    </div>
+                  </div>
+
+                  <div class="detail-item">
+                    <div class="detail-icon-wrap">
+                      <i class="fa-solid fa-file-lines"></i>
+                    </div>
+                    <div class="detail-text-wrap">
+                      <span class="detail-label">Required Documents</span>
+                      <p class="detail-value">
+                        Passport, Medical, Police Clearance
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="#" class="btn btn-custom-outline">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===== WORK AREA ENDS =======-->
+
+    <!--===== ABOUT AREA STARTS =======-->
+    <div class="about1 mb-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="about-heading heading1 text-center">
+              <div class="space16"></div>
+              <h2
+                class="vl-section-title"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                Our Leadership Team
+              </h2>
+              <div class="space16"></div>
+              <p data-aos="fade-left" data-aos-duration="1100">
+                Led by experienced professionals committed to ethical
+                recruitment
+              </p>
+              <div class="space32"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="profile-card"
+              data-aos="fade-right"
+              data-aos-duration="700"
+            >
+              <div class="card-image-wrapper">
+                <img
+                  src="assets/img/all-images/service/service-img1.png"
+                  alt="Dr. Kamal Hossain"
+                />
+                <div class="image-overlay">
+                  <div class="overlay-name">Dr. Kamal Hossain</div>
+                  <div class="overlay-title">Managing Director</div>
+                  <div class="overlay-exp">25+ Years Experience</div>
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="card-description">
+                  Former IOM consultant with deep commitment to ethical
+                  recruitment and rural empowerment.
+                </p>
+                <div class="cert-line">
+                  <i class="fa-solid fa-award"></i> IOM/RBA Certified
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="profile-card"
+              data-aos="fade-right"
+              data-aos-duration="900"
+            >
+              <div class="card-image-wrapper">
+                <img
+                  src="assets/img/all-images/service/service-img2.png"
+                  alt="Nasrin Ahmed"
+                />
+                <div class="image-overlay">
+                  <div class="overlay-name">Nasrin Ahmed</div>
+                  <div class="overlay-title">Chief Operating Officer</div>
+                  <div class="overlay-exp">18+ Years Experience</div>
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="card-description">
+                  Expert in global operations and compliance, ensuring
+                  transparent processes.
+                </p>
+                <div class="cert-line">
+                  <i class="fa-solid fa-award"></i> IOM/RBA Certified
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div
+              class="profile-card"
+              data-aos="fade-right"
+              data-aos-duration="1100"
+            >
+              <div class="card-image-wrapper">
+                <img
+                  src="assets/img/all-images/service/service-img3.png"
+                  alt="Mohammad Rahim"
+                />
+                <div class="image-overlay">
+                  <div class="overlay-name">Mohammad Rahim</div>
+                  <div class="overlay-title">Head of Recruitment</div>
+                  <div class="overlay-exp">15+ Years Experience</div>
+                </div>
+              </div>
+              <div class="card-content">
+                <p class="card-description">
+                  Dedicated to matching rural talent with international
+                  opportunities.
+                </p>
+                <div class="cert-line">
+                  <i class="fa-solid fa-award"></i> IOM/RBA Certified
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="space24"></div>
+      <div class="space24"></div>
+      <div class="space24"></div>
+      <div class="container">
+        <div
+          class="certifications-wrapper"
+          data-aos="zoom-in"
+          data-aos-duration="800"
+        >
+          <h2 class="section-title">Our Certifications & Memberships</h2>
+          <div class="cert-grid">
+            <div
+              class="cert-card"
+              data-aos="fade-right"
+              data-aos-duration="800"
+            >
+              <i class="fa-solid fa-shield-halved icon-blue"></i>
+              <h3>BMET Licensed</h3>
+              <p>RL-1234/2015</p>
+            </div>
+            <div
+              class="cert-card"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <i class="fa-solid fa-globe icon-blue"></i>
+              <h3>IOM Partner</h3>
+              <p>UN Migration</p>
+            </div>
+            <div
+              class="cert-card"
+              data-aos="fade-right"
+              data-aos-duration="1200"
+            >
+              <i class="fa-solid fa-ribbon icon-blue"></i>
+              <h3>RBA Certified</h3>
+              <p>Fair Recruitment</p>
+            </div>
+            <div
+              class="cert-card"
+              data-aos="fade-right"
+              data-aos-duration="1400"
+            >
+              <i class="fa-solid fa-users icon-blue"></i>
+              <h3>BAIRA Member</h3>
+              <p>Full Member</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mission-vision-grid">
+          <div
+            class="mv-box mission"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <div class="mv-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <h2>Our Mission</h2>
+            <p>
+              Empowering rural Bangladesh through ethical international
+              recruitment, providing transparent pathways to global
+              opportunities while ensuring worker welfare and dignity.
+            </p>
+          </div>
+          <div
+            class="mv-box vision"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <div class="mv-icon"><i class="fa-solid fa-globe"></i></div>
+            <h2>Our Vision</h2>
+            <p>
+              To become Bangladesh's most trusted overseas recruitment partner,
+              setting the gold standard for worker welfare, transparency, and
+              ethical practices in the industry.
             </p>
           </div>
         </div>
-      </div>
 
-      <div class="gallery-tabs" data-aos="fade-up">
-        <button class="tab-btn active" data-filter="all">All</button>
-        <button class="tab-btn" data-filter="europe">Europe</button>
-        <button class="tab-btn" data-filter="asia">Asia</button>
-        <button class="tab-btn" data-filter="middle-east">Middle East</button>
-      </div>
-
-      <!-- Masonry Grid -->
-      <div class="gallery-grid">
-        <div class="gallery-item europe">
-          <img src="assets/img/all-images/case/case-img1.png" alt="Job" />
-          <div class="overlay">Germany Jobs</div>
-        </div>
-
-        <div class="gallery-item asia">
-          <img src="assets/img/all-images/case/case-img2.png" alt="Job" />
-          <div class="overlay">Japan Jobs</div>
-        </div>
-
-        <div class="gallery-item middle-east">
-          <img src="assets/img/all-images/case/case-img3.png" alt="Job" />
-          <div class="overlay">UAE Jobs</div>
-        </div>
-
-        <div class="gallery-item europe">
-          <img src="assets/img/all-images/case/case-img4.png" alt="Job" />
-          <div class="overlay">Italy Jobs</div>
-        </div>
-
-        <div class="gallery-item asia">
-          <img src="assets/img/all-images/case/case-img2.png" alt="Job" />
-          <div class="overlay">Malaysia Jobs</div>
-        </div>
-        <div class="gallery-item europe">
-          <img src="assets/img/all-images/case/case-img1.png" alt="Job" />
-          <div class="overlay">Germany Jobs</div>
-        </div>
-
-        <div class="gallery-item asia">
-          <img src="assets/img/all-images/case/case-img2.png" alt="Job" />
-          <div class="overlay">Japan Jobs</div>
-        </div>
-
-        <div class="gallery-item middle-east">
-          <img src="assets/img/all-images/case/case-img3.png" alt="Job" />
-          <div class="overlay">UAE Jobs</div>
-        </div>
-
-        <div class="gallery-item europe">
-          <img src="assets/img/all-images/case/case-img4.png" alt="Job" />
-          <div class="overlay">Italy Jobs</div>
-        </div>
-
-        <div class="gallery-item asia">
-          <img src="assets/img/all-images/case/case-img3.png" alt="Job" />
-          <div class="overlay">Malaysia Jobs</div>
-        </div>
-        <div class="gallery-item europe">
-          <img src="assets/img/all-images/case/case-img1.png" alt="Job" />
-          <div class="overlay">Germany Jobs</div>
-        </div>
-
-        <div class="gallery-item middle-east">
-          <img src="assets/img/all-images/case/case-img3.png" alt="Job" />
-          <div class="overlay">UAE Jobs</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- gallery-area end  -->
-
-  <!--===== WORK AREA STARTS =======-->
-  <div class="work1 sp1">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-7 m-auto">
-          <div class="heading1 text-center space-margin60">
-            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">
-              Our International Recruitment Services
-            </h2>
-            <div class="space16"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row" style="row-gap: 30px">
-        <div class="col-lg-4 col-md-6">
-          <div class="job-card" data-aos="fade-up" data-aos-duration="800" data-aos-offset="100">
-            <div class="card-body">
-              <div class="header-icon-wrap">
-                <i class="fa-solid fa-helmet-safety"></i>
-              </div>
-
-              <h2 class="card-title">Construction & Infrastructure</h2>
-
-              <div class="details-list">
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Target Countries</span>
-                    <p class="detail-value">UAE, Saudi Arabia, Qatar</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Salary Range</span>
-                    <p class="detail-value">$400-800/month</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-file-lines"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Required Documents</span>
-                    <p class="detail-value">
-                      Passport, Medical, Police Clearance
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="btn btn-custom-outline">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="job-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="100">
-            <div class="card-body">
-              <div class="header-icon-wrap">
-                <i class="fa-regular fa-heart"></i>
-              </div>
-
-              <h2 class="card-title">Healthcare Support Staff</h2>
-
-              <div class="details-list">
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Target Countries</span>
-                    <p class="detail-value">Malaysia, Singapore, UK</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Salary Range</span>
-                    <p class="detail-value">$600-1200/month</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-file-lines"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Required Documents</span>
-                    <p class="detail-value">
-                      Passport, Medical, Police Clearance
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="btn btn-custom-outline">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="job-card" data-aos="fade-up" data-aos-duration="1100" data-aos-offset="100">
-            <div class="card-body">
-              <div class="header-icon-wrap">
-                <i class="fa-solid fa-shirt"></i>
-              </div>
-
-              <h2 class="card-title">Garment & Textile Experts</h2>
-
-              <div class="details-list">
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Target Countries</span>
-                    <p class="detail-value">Turkey, Jordan, Vietnam</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Salary Range</span>
-                    <p class="detail-value">$350-700/month</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-file-lines"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Required Documents</span>
-                    <p class="detail-value">
-                      Passport, Medical, Police Clearance
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="btn btn-custom-outline">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="job-card" data-aos="fade-up" data-aos-duration="1200" data-aos-offset="100">
-            <div class="card-body">
-              <div class="header-icon-wrap">
-                <i class="fa-solid fa-shirt"></i>
-              </div>
-
-              <h2 class="card-title">Agriculture & Poultry</h2>
-
-              <div class="details-list">
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Target Countries</span>
-                    <p class="detail-value">Australia, Canada, Oman</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Salary Range</span>
-                    <p class="detail-value">$500-900/month</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-file-lines"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Required Documents</span>
-                    <p class="detail-value">
-                      Passport, Medical, Police Clearance
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="btn btn-custom-outline">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="job-card" data-aos="fade-up" data-aos-duration="1400" data-aos-offset="100">
-            <div class="card-body">
-              <div class="header-icon-wrap">
-                <i class="fa-solid fa-shirt"></i>
-              </div>
-
-              <h2 class="card-title">Food Service & Hospitality</h2>
-
-              <div class="details-list">
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Target Countries</span>
-                    <p class="detail-value">UAE, Maldives, Thailand</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Salary Range</span>
-                    <p class="detail-value">$450-850/month</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-file-lines"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Required Documents</span>
-                    <p class="detail-value">
-                      Passport, Medical, Police Clearance
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="btn btn-custom-outline">Learn More</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 mx-auto">
-          <div class="job-card" data-aos="fade-up" data-aos-duration="1600" data-aos-offset="100">
-            <div class="card-body">
-              <div class="header-icon-wrap">
-                <i class="fa-solid fa-shirt"></i>
-              </div>
-
-              <h2 class="card-title">Skilled Technicians</h2>
-
-              <div class="details-list">
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Target Countries</span>
-                    <p class="detail-value">Saudi Arabia, Kuwait, Japan</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-dollar-sign"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Salary Range</span>
-                    <p class="detail-value">$600-1500/month</p>
-                  </div>
-                </div>
-
-                <div class="detail-item">
-                  <div class="detail-icon-wrap">
-                    <i class="fa-solid fa-file-lines"></i>
-                  </div>
-                  <div class="detail-text-wrap">
-                    <span class="detail-label">Required Documents</span>
-                    <p class="detail-value">
-                      Passport, Medical, Police Clearance
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <a href="#" class="btn btn-custom-outline">Learn More</a>
-            </div>
+        <div class="values-section">
+          <h2 class="section-title" data-aos="zoom-in" data-aos-duration="800">
+            Our Core Values
+          </h2>
+          <div class="values-flex">
+            <span class="value-pill" data-aos="fade-up" data-aos-duration="800"
+              ><i class="fa-solid fa-medal"></i> Integrity</span
+            >
+            <span class="value-pill" data-aos="fade-up" data-aos-duration="1000"
+              ><i class="fa-solid fa-medal"></i> Excellence</span
+            >
+            <span class="value-pill" data-aos="fade-up" data-aos-duration="1200"
+              ><i class="fa-solid fa-medal"></i> Compassion</span
+            >
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!--===== WORK AREA ENDS =======-->
+    <!--===== ABOUT AREA ENDS =======-->
 
-  <!--===== ABOUT AREA STARTS =======-->
-  <div class="about1 mb-100">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="about-heading heading1 text-center">
-            <div class="space16"></div>
-            <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">
-              Our Leadership Team
-            </h2>
-            <div class="space16"></div>
-            <p data-aos="fade-left" data-aos-duration="1100">
-              Led by experienced professionals committed to ethical
-              recruitment
-            </p>
-            <div class="space32"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-4 col-md-6">
-          <div class="profile-card" data-aos="fade-right" data-aos-duration="700">
-            <div class="card-image-wrapper">
-              <img src="assets/img/all-images/service/service-img1.png" alt="Dr. Kamal Hossain" />
-              <div class="image-overlay">
-                <div class="overlay-name">Dr. Kamal Hossain</div>
-                <div class="overlay-title">Managing Director</div>
-                <div class="overlay-exp">25+ Years Experience</div>
-              </div>
-            </div>
-            <div class="card-content">
-              <p class="card-description">
-                Former IOM consultant with deep commitment to ethical
-                recruitment and rural empowerment.
-              </p>
-              <div class="cert-line">
-                <i class="fa-solid fa-award"></i> IOM/RBA Certified
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="profile-card" data-aos="fade-right" data-aos-duration="900">
-            <div class="card-image-wrapper">
-              <img src="assets/img/all-images/service/service-img2.png" alt="Nasrin Ahmed" />
-              <div class="image-overlay">
-                <div class="overlay-name">Nasrin Ahmed</div>
-                <div class="overlay-title">Chief Operating Officer</div>
-                <div class="overlay-exp">18+ Years Experience</div>
-              </div>
-            </div>
-            <div class="card-content">
-              <p class="card-description">
-                Expert in global operations and compliance, ensuring
-                transparent processes.
-              </p>
-              <div class="cert-line">
-                <i class="fa-solid fa-award"></i> IOM/RBA Certified
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6">
-          <div class="profile-card" data-aos="fade-right" data-aos-duration="1100">
-            <div class="card-image-wrapper">
-              <img src="assets/img/all-images/service/service-img3.png" alt="Mohammad Rahim" />
-              <div class="image-overlay">
-                <div class="overlay-name">Mohammad Rahim</div>
-                <div class="overlay-title">Head of Recruitment</div>
-                <div class="overlay-exp">15+ Years Experience</div>
-              </div>
-            </div>
-            <div class="card-content">
-              <p class="card-description">
-                Dedicated to matching rural talent with international
-                opportunities.
-              </p>
-              <div class="cert-line">
-                <i class="fa-solid fa-award"></i> IOM/RBA Certified
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="space24"></div>
-    <div class="space24"></div>
-    <div class="space24"></div>
-    <div class="container">
-      <div class="certifications-wrapper" data-aos="zoom-in" data-aos-duration="800">
-        <h2 class="section-title">Our Certifications & Memberships</h2>
-        <div class="cert-grid">
-          <div class="cert-card" data-aos="fade-right" data-aos-duration="800">
-            <i class="fa-solid fa-shield-halved icon-blue"></i>
-            <h3>BMET Licensed</h3>
-            <p>RL-1234/2015</p>
-          </div>
-          <div class="cert-card" data-aos="fade-right" data-aos-duration="1000">
-            <i class="fa-solid fa-globe icon-blue"></i>
-            <h3>IOM Partner</h3>
-            <p>UN Migration</p>
-          </div>
-          <div class="cert-card" data-aos="fade-right" data-aos-duration="1200">
-            <i class="fa-solid fa-ribbon icon-blue"></i>
-            <h3>RBA Certified</h3>
-            <p>Fair Recruitment</p>
-          </div>
-          <div class="cert-card" data-aos="fade-right" data-aos-duration="1400">
-            <i class="fa-solid fa-users icon-blue"></i>
-            <h3>BAIRA Member</h3>
-            <p>Full Member</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="mission-vision-grid">
-        <div class="mv-box mission" data-aos="fade-right" data-aos-duration="800">
-          <div class="mv-icon"><i class="fa-solid fa-shield-halved"></i></div>
-          <h2>Our Mission</h2>
-          <p>
-            Empowering rural Bangladesh through ethical international
-            recruitment, providing transparent pathways to global
-            opportunities while ensuring worker welfare and dignity.
-          </p>
-        </div>
-        <div class="mv-box vision" data-aos="fade-left" data-aos-duration="800">
-          <div class="mv-icon"><i class="fa-solid fa-globe"></i></div>
-          <h2>Our Vision</h2>
-          <p>
-            To become Bangladesh's most trusted overseas recruitment partner,
-            setting the gold standard for worker welfare, transparency, and
-            ethical practices in the industry.
-          </p>
-        </div>
-      </div>
-
-      <div class="values-section">
-        <h2 class="section-title" data-aos="zoom-in" data-aos-duration="800">
-          Our Core Values
-        </h2>
-        <div class="values-flex">
-          <span class="value-pill" data-aos="fade-up" data-aos-duration="800"><i class="fa-solid fa-medal"></i>
-            Integrity</span>
-          <span class="value-pill" data-aos="fade-up" data-aos-duration="1000"><i class="fa-solid fa-medal"></i>
-            Excellence</span>
-          <span class="value-pill" data-aos="fade-up" data-aos-duration="1200"><i class="fa-solid fa-medal"></i>
-            Compassion</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--===== ABOUT AREA ENDS =======-->
-
-  <!--===== Employers AREA STARTS =======-->
-  <div class="service1 sp2" style="
+    <!--===== Employers AREA STARTS =======-->
+    <div
+      class="service1 sp2"
+      style="
         background-image: url(assets/img/all-images/bg/section-bg1.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-      ">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 m-auto">
-          <div class="heading1 text-center space-margin60">
-            <div class="space16"></div>
-            <h2 class="vl-section-title" data-aos="zoom-in" data-aos-duration="1000">
-              Trusted by Global Employers
-            </h2>
-            <div class="space16"></div>
-            <p data-aos="zoom-in" data-aos-duration="1100">
-              Active Recruitment Countries
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="countries-section my-0">
-        <div class="countries-grid pt-0">
-          <div class="country-card" data-aos="fade-up" data-aos-duration="700">
-            <img src="https://flagcdn.com/w80/sa.png" alt="Saudi Arabia Flag" class="flag-icon" />
-            <h3>Saudi Arabia</h3>
-            <p class="worker-count"><span>1500+</span> Workers</p>
-          </div>
-
-          <div class="country-card" data-aos="fade-up" data-aos-duration="800">
-            <img src="https://flagcdn.com/w80/ae.png" alt="UAE Flag" class="flag-icon" />
-            <h3>UAE</h3>
-            <p class="worker-count"><span>1200+</span> Workers</p>
-          </div>
-
-          <div class="country-card" data-aos="fade-up" data-aos-duration="900">
-            <img src="https://flagcdn.com/w80/qa.png" alt="Qatar Flag" class="flag-icon" />
-            <h3>Qatar</h3>
-            <p class="worker-count"><span>800+</span> Workers</p>
-          </div>
-
-          <div class="country-card" data-aos="fade-up" data-aos-duration="1000">
-            <img src="https://flagcdn.com/w80/my.png" alt="Malaysia Flag" class="flag-icon" />
-            <h3>Malaysia</h3>
-            <p class="worker-count"><span>600+</span> Workers</p>
-          </div>
-
-          <div class="country-card" data-aos="fade-up" data-aos-duration="1100">
-            <img src="https://flagcdn.com/w80/sg.png" alt="Singapore Flag" class="flag-icon" />
-            <h3>Singapore</h3>
-            <p class="worker-count"><span>400+</span> Workers</p>
-          </div>
-
-          <div class="country-card" data-aos="fade-up" data-aos-duration="1200">
-            <img src="https://flagcdn.com/w80/om.png" alt="Oman Flag" class="flag-icon" />
-            <h3>Oman</h3>
-            <p class="worker-count"><span>350+</span> Workers</p>
-          </div>
-
-          <div class="country-card" data-aos="fade-up" data-aos-duration="1300">
-            <img src="https://flagcdn.com/w80/kw.png" alt="Kuwait Flag" class="flag-icon" />
-            <h3>Kuwait</h3>
-            <p class="worker-count"><span>300+</span> Workers</p>
-          </div>
-
-          <div class="country-card" data-aos="fade-up" data-aos-duration="1400">
-            <img src="https://flagcdn.com/w80/bh.png" alt="Bahrain Flag" class="flag-icon" />
-            <h3>Bahrain</h3>
-            <p class="worker-count"><span>200+</span> Workers</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--===== Employers AREA ENDS =======-->
-  <!--===== CONTACT AREA STARTS =======-->
-  <div class="contact2 sp1">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="heading2">
-            <h5 data-aos="fade-left" data-aos-duration="900">
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path
-                  d="M9.45001 17.8772C14.2115 17.6442 18 13.7338 18 8.94408C18 7.4743 17.6433 6.08732 17.0111 4.86399C14.4764 6.3183 13.2091 7.04546 12.2507 8.02546C11.1061 9.19582 10.2724 10.6308 9.82481 12.201C9.45001 13.5159 9.45001 14.9697 9.45001 17.8772Z"
-                  fill="#FB8500" />
-                <path
-                  d="M8.55001 17.8772C3.78851 17.6442 0 13.7338 0 8.94408C0 7.47429 0.356744 6.08731 0.988876 4.86398C3.52358 6.3183 4.79093 7.04546 5.74937 8.02547C6.89397 9.19583 7.72761 10.6308 8.17521 12.2011C8.55001 13.5159 8.55001 14.9697 8.55001 17.8772Z"
-                  fill="#FB8500" />
-                <path
-                  d="M1.43959 4.08981C3.97405 5.54399 5.24127 6.27107 6.57492 6.60594C8.16664 7.00559 9.83338 7.00559 11.4251 6.60594C12.7587 6.27108 14.026 5.54399 16.5604 4.08982C14.9571 1.62862 12.1699 0 9 0C5.8301 0 3.04295 1.62862 1.43959 4.08981Z"
-                  fill="#FB8500" />
-              </svg>
-              Verify
-            </h5>
-            <div class="space16"></div>
-            <h2 data-aos="fade-left" data-aos-duration="1000">
-              Let’s Work Together The Achieve Your Goals
-            </h2>
-            <div class="space16"></div>
-            <p data-aos="fade-left" data-aos-duration="1100">
-              Have questions about our services or need assistance with your
-              staffing or career needs We’re here to help!
-            </p>
-            <div class="space32"></div>
-            <div class="ot-con-boxarea" data-aos="fade-left" data-aos-duration="1200">
-              <div class="icons">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-                    stroke="#FB8500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  <path
-                    d="M12 2C9.87827 2 7.84344 2.84285 6.34315 4.34315C4.84285 5.84344 4 7.87827 4 10C4 11.892 4.402 13.13 5.5 14.5L12 22L18.5 14.5C19.598 13.13 20 11.892 20 10C20 7.87827 19.1571 5.84344 17.6569 4.34315C16.1566 2.84285 14.1217 2 12 2Z"
-                    stroke="#FB8500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <div class="text">
-                <p>Our Location</p>
-                <div class="space12"></div>
-                <a href="#">73 Bridge St Brooklyn, USA.</a>
-              </div>
-            </div>
-            <div class="space32"></div>
-            <div class="ot-con-boxarea" data-aos="fade-left" data-aos-duration="1300">
-              <div class="icons">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M15 7C15.5304 7 16.0391 7.21071 16.4142 7.58579C16.7893 7.96086 17 8.46957 17 9M15 3C16.5913 3 18.1174 3.63214 19.2426 4.75736C20.3679 5.88258 21 7.4087 21 9M5 4H9L11 9L8.5 10.5C9.57096 12.6715 11.3285 14.429 13.5 15.5L15 13L20 15V19C20 19.5304 19.7893 20.0391 19.4142 20.4142C19.0391 20.7893 18.5304 21 18 21C14.0993 20.763 10.4202 19.1065 7.65683 16.3432C4.8935 13.5798 3.23705 9.90074 3 6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4Z"
-                    stroke="#FB8500" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-              </div>
-              <div class="text">
-                <p>Office Number</p>
-                <div class="space12"></div>
-                <a href="mailto:+92152226132">+921 5222 6132</a>
-              </div>
-            </div>
-            <div class="space32"></div>
-            <div class="ot-con-boxarea" data-aos="fade-left" data-aos-duration="1400">
-              <div class="icons">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path
-                    d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6ZM20 6L12 10.99L4 6H20ZM20 18H4V8L12 13L20 8V18Z"
-                    fill="#FB8500" />
-                </svg>
-              </div>
-              <div class="text">
-                <p>Our Mail</p>
-                <div class="space12"></div>
-                <a href="mailto:contact@example.com">contact@example.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="zoom-out" data-aos-duration="1000">
-          <div class="contact-widget-boxarea">
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="input-area">
-                  <h4>First Name*</h4>
-                  <div class="space16"></div>
-                  <input type="text" placeholder="First Name" />
-                </div>
-                <div class="space24"></div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="input-area">
-                  <h4>Email Address*</h4>
-                  <div class="space16"></div>
-                  <input type="email" placeholder="Email" />
-                </div>
-                <div class="space24"></div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="input-area">
-                  <h4>Phone Number*</h4>
-                  <div class="space16"></div>
-                  <input type="number" placeholder="Phone Number" />
-                </div>
-                <div class="space24"></div>
-              </div>
-
-              <div class="col-lg-6">
-                <div class="input-area">
-                  <h4>Service Name*</h4>
-                  <div class="space16"></div>
-                  <input type="text" placeholder="Service Type" />
-                </div>
-                <div class="space24"></div>
-              </div>
-
-              <div class="col-lg-12">
-                <div class="input-area">
-                  <h4>Message*</h4>
-                  <div class="space16"></div>
-                  <textarea placeholder="Type your message..."></textarea>
-                </div>
-                <div class="space24"></div>
-              </div>
-
-              <div class="col-lg-12">
-                <div class="input-area">
-                  <button type="submit" class="vl-btn1">
-                    Send <span><i class="fa-solid fa-arrow-right"></i></span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--===== CONTACT AREA ENDS =======-->
-  <section class="partners-container main-section-area">
-    <div class="partners-header">
-      <i class="fa-solid fa-building-user header-icon"></i>
-      <h2>Trusted Partner Companies</h2>
-      <p>
-        Working with leading international employers across multiple sectors
-      </p>
-    </div>
-
-    <div class="partners-grid">
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="500">
-        <i class="fa-solid fa-globe"></i><span>Saudi Binladin Group</span>
-      </a>
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="600">
-        <i class="fa-solid fa-globe"></i><span>Emaar Properties</span>
-      </a>
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="700">
-        <i class="fa-solid fa-globe"></i><span>Qatar Petroleum</span>
-      </a>
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="800">
-        <i class="fa-solid fa-globe"></i><span>Petronas Malaysia</span>
-      </a>
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="500">
-        <i class="fa-solid fa-globe"></i><span>Sembcorp Singapore</span>
-      </a>
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="600">
-        <i class="fa-solid fa-globe"></i><span>Oman Construction Co.</span>
-      </a>
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="700">
-        <i class="fa-solid fa-globe"></i><span>Al-Futtaim Group</span>
-      </a>
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="800">
-        <i class="fa-solid fa-globe"></i><span>Majid Al Futtaim</span>
-      </a>
-
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="500">
-        <i class="fa-solid fa-globe"></i><span>Lulu Group International</span>
-      </a>
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="600">
-        <i class="fa-solid fa-globe"></i><span>National Hospital</span>
-      </a>
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="700">
-        <i class="fa-solid fa-globe"></i><span>Raffles Medical Group</span>
-      </a>
-      <a href="#" class="partner-card" data-aos="fade-up" data-aos-duration="800">
-        <i class="fa-solid fa-globe"></i><span>KPJ Healthcare</span>
-      </a>
-    </div>
-
-    <div class="counter-section-area" style="position: unset" data-aos="fade-up" data-aos-duration="1000">
+      "
+    >
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-6 col-md-4">
-            <div class="counter-boxarea">
-              <h2><span class="counter">12</span>+</h2>
+          <div class="col-lg-6 m-auto">
+            <div class="heading1 text-center space-margin60">
               <div class="space16"></div>
-              <p>Years of Partnership</p>
+              <h2
+                class="vl-section-title"
+                data-aos="zoom-in"
+                data-aos-duration="1000"
+              >
+                Trusted by Global Employers
+              </h2>
+              <div class="space16"></div>
+              <p data-aos="zoom-in" data-aos-duration="1100">
+                Active Recruitment Countries
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-4 col-6 col-md-4">
-            <div class="counter-boxarea">
-              <h2><span class="counter">100</span>+</h2>
-              <div class="space16"></div>
-              <p>Partner Companies</p>
+        <div class="countries-section my-0">
+          <div class="countries-grid pt-0">
+            <div
+              class="country-card"
+              data-aos="fade-up"
+              data-aos-duration="700"
+            >
+              <img
+                src="https://flagcdn.com/w80/sa.png"
+                alt="Saudi Arabia Flag"
+                class="flag-icon"
+              />
+              <h3>Saudi Arabia</h3>
+              <p class="worker-count"><span>1500+</span> Workers</p>
             </div>
-          </div>
 
-          <div class="col-lg-4 col-6 col-md-4">
-            <div class="space20 d-md-none d-block"></div>
-            <div class="counter-boxarea">
-              <h2><span class="counter">25</span>+</h2>
-              <div class="space16"></div>
-              <p>Countries</p>
+            <div
+              class="country-card"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
+              <img
+                src="https://flagcdn.com/w80/ae.png"
+                alt="UAE Flag"
+                class="flag-icon"
+              />
+              <h3>UAE</h3>
+              <p class="worker-count"><span>1200+</span> Workers</p>
+            </div>
+
+            <div
+              class="country-card"
+              data-aos="fade-up"
+              data-aos-duration="900"
+            >
+              <img
+                src="https://flagcdn.com/w80/qa.png"
+                alt="Qatar Flag"
+                class="flag-icon"
+              />
+              <h3>Qatar</h3>
+              <p class="worker-count"><span>800+</span> Workers</p>
+            </div>
+
+            <div
+              class="country-card"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              <img
+                src="https://flagcdn.com/w80/my.png"
+                alt="Malaysia Flag"
+                class="flag-icon"
+              />
+              <h3>Malaysia</h3>
+              <p class="worker-count"><span>600+</span> Workers</p>
+            </div>
+
+            <div
+              class="country-card"
+              data-aos="fade-up"
+              data-aos-duration="1100"
+            >
+              <img
+                src="https://flagcdn.com/w80/sg.png"
+                alt="Singapore Flag"
+                class="flag-icon"
+              />
+              <h3>Singapore</h3>
+              <p class="worker-count"><span>400+</span> Workers</p>
+            </div>
+
+            <div
+              class="country-card"
+              data-aos="fade-up"
+              data-aos-duration="1200"
+            >
+              <img
+                src="https://flagcdn.com/w80/om.png"
+                alt="Oman Flag"
+                class="flag-icon"
+              />
+              <h3>Oman</h3>
+              <p class="worker-count"><span>350+</span> Workers</p>
+            </div>
+
+            <div
+              class="country-card"
+              data-aos="fade-up"
+              data-aos-duration="1300"
+            >
+              <img
+                src="https://flagcdn.com/w80/kw.png"
+                alt="Kuwait Flag"
+                class="flag-icon"
+              />
+              <h3>Kuwait</h3>
+              <p class="worker-count"><span>300+</span> Workers</p>
+            </div>
+
+            <div
+              class="country-card"
+              data-aos="fade-up"
+              data-aos-duration="1400"
+            >
+              <img
+                src="https://flagcdn.com/w80/bh.png"
+                alt="Bahrain Flag"
+                class="flag-icon"
+              />
+              <h3>Bahrain</h3>
+              <p class="worker-count"><span>200+</span> Workers</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    <!--===== Employers AREA ENDS =======-->
+    <!--===== CONTACT AREA STARTS =======-->
+    <div class="contact2 sp1">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="heading2">
+              <h5 data-aos="fade-left">Verify</h5>
+              <div class="space16"></div>
+              <h2 data-aos="fade-left" data-aos-duration="1000">
+                Passport Verification Progress
+              </h2>
+              <div class="space16"></div>
+              <p data-aos="fade-left" data-aos-duration="1100">
+                Track your passport verification status in real time and upload
+                required documents securely.
+              </p>
+              <div class="space32"></div>
+              <!-- Progress -->
+              <div
+                class="progress-box"
+                data-aos="fade-left"
+                data-aos-duration="1200"
+              >
+                <div class="progress-info">
+                  <span>Verification Progress</span>
+                  <span id="progressPercent">40%</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 40%"></div>
+                </div>
+              </div>
 
-  <!--===== FOOTER AREA STARTS =======-->
-  <div class="vl-footer1-section-area">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="footer-logo-area">
-            <!-- <img src="assets/img/logo/logo1.png" alt=""> -->
-            <h4>NAVIRA LTD</h4>
-            <h6>BMET Licensed & Verified</h6>
-            <div class="space16"></div>
-            <p>
-              Your trusted partner for international employment since 2015.
-              Government approved, BMET licensed, and committed to ethical
-              recruitment practices.
-            </p>
-            <div class="space24"></div>
-            <ul class="social-links">
-              <li>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-              </li>
-              <li>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-              </li>
-            </ul>
+              <!-- Steps -->
+              <div
+                class="verify-steps"
+                data-aos="fade-left"
+                data-aos-duration="1300"
+              >
+                <div class="step done">✔ Passport Uploaded</div>
+                <div class="step active">⏳ Under Review</div>
+                <div class="step">🔒 Verified</div>
+              </div>
+            </div>
           </div>
-        </div>
+          <div class="col-lg-6" data-aos="zoom-out" data-aos-duration="1000">
+            <div class="contact-widget-boxarea">
+              <div class="row">
+                <div class="col-12">
+                  <div class="input-area">
+                    <h4>Passport Number*</h4>
+                    <div class="space16"></div>
+                    <input type="text" placeholder="Enter passport number" />
+                  </div>
+                  <div class="space24"></div>
+                </div>
+                <div class="col-12">
+                  <h4>Passport Number*</h4>
+                  <div class="space16"></div>
 
-        <div class="col-lg col-md-6">
-          <div class="space30 d-lg-none d-block"></div>
-          <div class="footer-widget-area foot-padding1">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Rural Registration </a></li>
-              <li><a href="#">Job Openings </a></li>
-              <li><a href="#">Training Centers </a></li>
-            </ul>
+                  <div class="upload-box">
+                    <input
+                      type="file"
+                      id="passportUpload"
+                      accept="image/*,.pdf"
+                    />
+                    <label for="passportUpload">
+                      <i class="fa-solid fa-cloud-arrow-up"></i>
+                      <p>Upload Passport (JPG, PNG, PDF)</p>
+                    </label>
+                  </div>
+                  <div class="space24"></div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="input-area">
+                    <button type="submit" class="vl-btn1">
+                      Submit for Verification
+                      <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col-lg col-md-6">
-          <div class="space30 d-lg-none d-block"></div>
-          <div class="footer-widget-area">
-            <h3>Contact Us</h3>
-            <ul>
-              <li>
-                <a href="tel:+880 1700-000000"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94M18.5 21C9.93959 21 3 14.0604 3 5.5C3 5.11378 3.01413 4.73086 3.04189 4.35173C3.07375 3.91662 3.08968 3.69907 3.2037 3.50103C3.29814 3.33701 3.4655 3.18146 3.63598 3.09925C3.84181 3 4.08188 3 4.56201 3H7.37932C7.78308 3 7.98496 3 8.15802 3.06645C8.31089 3.12515 8.44701 3.22049 8.55442 3.3441C8.67601 3.48403 8.745 3.67376 8.88299 4.05321L10.0491 7.26005C10.2096 7.70153 10.2899 7.92227 10.2763 8.1317C10.2643 8.31637 10.2012 8.49408 10.0942 8.64506C9.97286 8.81628 9.77145 8.93713 9.36863 9.17882L8 10C9.2019 12.6489 11.3501 14.7999 14 16L14.8212 14.6314C15.0629 14.2285 15.1837 14.0271 15.3549 13.9058C15.5059 13.7988 15.6836 13.7357 15.8683 13.7237C16.0777 13.7101 16.2985 13.7904 16.74 13.9509L19.9468 15.117C20.3262 15.255 20.516 15.324 20.6559 15.4456C20.7795 15.553 20.8749 15.6891 20.9335 15.842C21 16.015 21 16.2169 21 16.6207V19.438C21 19.9181 21 20.1582 20.9007 20.364C20.8185 20.5345 20.663 20.7019 20.499 20.7963C20.3009 20.9103 20.0834 20.9262 19.6483 20.9581C19.2691 20.9859 18.8862 21 18.5 21Z"
-                      stroke="#31353D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  +880 1700-000000</a>
-              </li>
-              <li>
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                    fill="none">
-                    <path
-                      d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
-                      stroke="#31353D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                    <path
-                      d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
-                      stroke="#31353D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  Navira Ltd, Dhaka, Bangladesh</a>
-              </li>
-              <li>
-                <a href="mailto:info@naviraltd.com"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                    viewBox="0 0 24 24" fill="none">
-                    <path
-                      d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
-                      stroke="#31353D" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                  info@naviraltd.com</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="space48"></div>
-      <div class="col-lg-12">
-        <div class="copyright-area">
-          <a href="#">Copyright @2025 Navira. All Rights Reserved</a>
-          <ul>
-            <li><a href="#">Privacy Policy</a><span> | </span></li>
-            <li><a href="#">Terms Of Condition</a></li>
-          </ul>
         </div>
       </div>
     </div>
-  </div>
-  <!--===== FOOTER AREA ENDS =======-->
+    <!--===== CONTACT AREA ENDS =======-->
+    <section class="partners-container main-section-area">
+      <div class="partners-header">
+        <i class="fa-solid fa-building-user header-icon"></i>
+        <h2>Trusted Partner Companies</h2>
+        <p>
+          Working with leading international employers across multiple sectors
+        </p>
+      </div>
 
-  <!--===== JS SCRIPT LINK =======-->
-  <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
-  <script src="assets/js/plugins/bootstrap.min.js"></script>
-  <script src="assets/js/plugins/fontawesome.js"></script>
-  <script src="assets/js/plugins/aos.js"></script>
-  <script src="assets/js/plugins/counter.js"></script>
-  <script src="assets/js/plugins/magnific-popup.js"></script>
-  <script src="assets/js/plugins/nice-select.js"></script>
-  <script src="assets/js/plugins/waypoints.js"></script>
-  <script src="assets/js/plugins/slick-slider.js"></script>
-  <script src="assets/js/plugins/circle-progress.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script>
-    const tabs = document.querySelectorAll(".tab-btn");
-    const items = document.querySelectorAll(".gallery-item");
+      <div class="partners-grid">
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <i class="fa-solid fa-globe"></i><span>Saudi Binladin Group</span>
+        </a>
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
+          <i class="fa-solid fa-globe"></i><span>Emaar Properties</span>
+        </a>
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <i class="fa-solid fa-globe"></i><span>Qatar Petroleum</span>
+        </a>
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <i class="fa-solid fa-globe"></i><span>Petronas Malaysia</span>
+        </a>
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <i class="fa-solid fa-globe"></i><span>Sembcorp Singapore</span>
+        </a>
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
+          <i class="fa-solid fa-globe"></i><span>Oman Construction Co.</span>
+        </a>
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <i class="fa-solid fa-globe"></i><span>Al-Futtaim Group</span>
+        </a>
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <i class="fa-solid fa-globe"></i><span>Majid Al Futtaim</span>
+        </a>
 
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-        tabs.forEach((btn) => btn.classList.remove("active"));
-        tab.classList.add("active");
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <i class="fa-solid fa-globe"></i><span>Lulu Group International</span>
+        </a>
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="600"
+        >
+          <i class="fa-solid fa-globe"></i><span>National Hospital</span>
+        </a>
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="700"
+        >
+          <i class="fa-solid fa-globe"></i><span>Raffles Medical Group</span>
+        </a>
+        <a
+          href="#"
+          class="partner-card"
+          data-aos="fade-up"
+          data-aos-duration="800"
+        >
+          <i class="fa-solid fa-globe"></i><span>KPJ Healthcare</span>
+        </a>
+      </div>
 
-        const filter = tab.dataset.filter;
+      <div
+        class="counter-section-area"
+        style="position: unset"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-6 col-md-4">
+              <div class="counter-boxarea">
+                <h2><span class="counter">12</span>+</h2>
+                <div class="space16"></div>
+                <p>Years of Partnership</p>
+              </div>
+            </div>
 
-        items.forEach((item) => {
-          if (filter === "all" || item.classList.contains(filter)) {
-            item.style.display = "block";
-          } else {
-            item.style.display = "none";
-          }
+            <div class="col-lg-4 col-6 col-md-4">
+              <div class="counter-boxarea">
+                <h2><span class="counter">100</span>+</h2>
+                <div class="space16"></div>
+                <p>Partner Companies</p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-6 col-md-4">
+              <div class="space20 d-md-none d-block"></div>
+              <div class="counter-boxarea">
+                <h2><span class="counter">25</span>+</h2>
+                <div class="space16"></div>
+                <p>Countries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--===== FOOTER AREA STARTS =======-->
+    <div class="vl-footer1-section-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="footer-logo-area">
+              <!-- <img src="assets/img/logo/logo1.png" alt=""> -->
+              <h4>NAVIRA LTD</h4>
+              <h6>BMET Licensed & Verified</h6>
+              <div class="space16"></div>
+              <p>
+                Your trusted partner for international employment since 2015.
+                Government approved, BMET licensed, and committed to ethical
+                recruitment practices.
+              </p>
+              <div class="space24"></div>
+              <ul class="social-links">
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6">
+            <div class="space30 d-lg-none d-block"></div>
+            <div class="footer-widget-area foot-padding1">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Rural Registration </a></li>
+                <li><a href="#">Job Openings </a></li>
+                <li><a href="#">Training Centers </a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg col-md-6">
+            <div class="space30 d-lg-none d-block"></div>
+            <div class="footer-widget-area">
+              <h3>Contact Us</h3>
+              <ul>
+                <li>
+                  <a href="tel:+880 1700-000000"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M14.05 6C15.0268 6.19057 15.9244 6.66826 16.6281 7.37194C17.3318 8.07561 17.8095 8.97326 18 9.95M14.05 2C16.0793 2.22544 17.9716 3.13417 19.4163 4.57701C20.8609 6.01984 21.7721 7.91101 22 9.94M18.5 21C9.93959 21 3 14.0604 3 5.5C3 5.11378 3.01413 4.73086 3.04189 4.35173C3.07375 3.91662 3.08968 3.69907 3.2037 3.50103C3.29814 3.33701 3.4655 3.18146 3.63598 3.09925C3.84181 3 4.08188 3 4.56201 3H7.37932C7.78308 3 7.98496 3 8.15802 3.06645C8.31089 3.12515 8.44701 3.22049 8.55442 3.3441C8.67601 3.48403 8.745 3.67376 8.88299 4.05321L10.0491 7.26005C10.2096 7.70153 10.2899 7.92227 10.2763 8.1317C10.2643 8.31637 10.2012 8.49408 10.0942 8.64506C9.97286 8.81628 9.77145 8.93713 9.36863 9.17882L8 10C9.2019 12.6489 11.3501 14.7999 14 16L14.8212 14.6314C15.0629 14.2285 15.1837 14.0271 15.3549 13.9058C15.5059 13.7988 15.6836 13.7357 15.8683 13.7237C16.0777 13.7101 16.2985 13.7904 16.74 13.9509L19.9468 15.117C20.3262 15.255 20.516 15.324 20.6559 15.4456C20.7795 15.553 20.8749 15.6891 20.9335 15.842C21 16.015 21 16.2169 21 16.6207V19.438C21 19.9181 21 20.1582 20.9007 20.364C20.8185 20.5345 20.663 20.7019 20.499 20.7963C20.3009 20.9103 20.0834 20.9262 19.6483 20.9581C19.2691 20.9859 18.8862 21 18.5 21Z"
+                        stroke="#31353D"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    +880 1700-000000</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M12 21C15.5 17.4 19 14.1764 19 10.2C19 6.22355 15.866 3 12 3C8.13401 3 5 6.22355 5 10.2C5 14.1764 8.5 17.4 12 21Z"
+                        stroke="#31353D"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                        stroke="#31353D"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    Navira Ltd, Dhaka, Bangladesh</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:info@naviraltd.com"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M4 18L9 12M20 18L15 12M3 8L10.225 12.8166C10.8665 13.2443 11.1872 13.4582 11.5339 13.5412C11.8403 13.6147 12.1597 13.6147 12.4661 13.5412C12.8128 13.4582 13.1335 13.2443 13.775 12.8166L21 8M6.2 19H17.8C18.9201 19 19.4802 19 19.908 18.782C20.2843 18.5903 20.5903 18.2843 20.782 17.908C21 17.4802 21 16.9201 21 15.8V8.2C21 7.0799 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V15.8C3 16.9201 3 17.4802 3.21799 17.908C3.40973 18.2843 3.71569 18.5903 4.09202 18.782C4.51984 19 5.07989 19 6.2 19Z"
+                        stroke="#31353D"
+                        stroke-width="1.6"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    info@naviraltd.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="space48"></div>
+        <div class="col-lg-12">
+          <div class="copyright-area">
+            <a href="#">Copyright @2025 Navira. All Rights Reserved</a>
+            <ul>
+              <li><a href="#">Privacy Policy</a><span> | </span></li>
+              <li><a href="#">Terms Of Condition</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--===== FOOTER AREA ENDS =======-->
+
+    <!--===== JS SCRIPT LINK =======-->
+    <script src="assets/js/plugins/jquery-3-7-1.min.js"></script>
+    <script src="assets/js/plugins/bootstrap.min.js"></script>
+    <script src="assets/js/plugins/fontawesome.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/plugins/counter.js"></script>
+    <script src="assets/js/plugins/magnific-popup.js"></script>
+    <script src="assets/js/plugins/nice-select.js"></script>
+    <script src="assets/js/plugins/waypoints.js"></script>
+    <script src="assets/js/plugins/slick-slider.js"></script>
+    <script src="assets/js/plugins/circle-progress.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      const tabs = document.querySelectorAll(".tab-btn");
+      const items = document.querySelectorAll(".gallery-item");
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          tabs.forEach((btn) => btn.classList.remove("active"));
+          tab.classList.add("active");
+
+          const filter = tab.dataset.filter;
+
+          items.forEach((item) => {
+            if (filter === "all" || item.classList.contains(filter)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
         });
       });
-    });
-  </script>
-</body>
+    </script>
+    <script>
+      const progressFill = document.querySelector(".progress-fill");
+      const progressText = document.getElementById("progressPercent");
 
+      // Example dynamic update
+      let progress = 40;
+
+      function updateProgress(value) {
+        progressFill.style.width = value + "%";
+        progressText.innerText = value + "%";
+      }
+
+      // Example: after upload
+      document
+        .getElementById("passportUpload")
+        .addEventListener("change", () => {
+          updateProgress(70);
+        });
+    </script>
+  </body>
 </html>
